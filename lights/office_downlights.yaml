@@ -1,0 +1,9 @@
+---
+entities:
+- light.office_downlight_01
+- light.office_downlight_02
+- light.office_downlight_03
+- light.office_downlight_04
+name: Office Downlights
+platform: group
+unique_id: office_downlights

@@ -1,0 +1,6 @@
+---
+entities:
+- light.stairwell_nightlight_01
+name: Stairwell Nightlights
+platform: group
+unique_id: stairwell_nightlights

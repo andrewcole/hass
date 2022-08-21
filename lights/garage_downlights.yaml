@@ -1,0 +1,6 @@
+---
+entities:
+- light.garage_downlight_01
+name: Garage Downlights
+platform: group
+unique_id: garage_downlights

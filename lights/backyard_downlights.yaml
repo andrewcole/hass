@@ -1,0 +1,9 @@
+---
+entities:
+- light.backyard_downlight_01
+- light.backyard_downlight_02
+- light.backyard_downlight_03
+- light.backyard_downlight_04
+name: Backyard Downlights
+platform: group
+unique_id: backyard_downlights
