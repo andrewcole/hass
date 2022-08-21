@@ -6,6 +6,12 @@ http:
   trusted_proxies:
   - 172.24.0.0/16
   use_x_forwarded_for: true
+influxdb:
+  api_version: 1
+  database: !secret influxdb_database
+  host: !secret influxdb_host
+  port: !secret influxdb_port
+  ssl: false
 recorder:
   db_url: !secret recorder_db_url
 scene:
