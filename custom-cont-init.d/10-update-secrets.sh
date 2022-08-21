@@ -19,3 +19,6 @@ echo Configuring InfluxDB
 yq w -i "${secrets}" --prettyPrint influxdb_host     -- ${INFLUXDB_HOST}
 yq w -i "${secrets}" --prettyPrint influxdb_port     -- ${INFLUXDB_PORT}
 yq w -i "${secrets}" --prettyPrint influxdb_database -- ${INFLUXDB_DATABASE}
+
+echo Configuring SNMP
+yq w -i "${secrets}" --prettyPrint snmp_community -- ${SNMP_COMMUNITY}
