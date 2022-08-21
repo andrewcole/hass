@@ -2,6 +2,14 @@
 automation:
 # Loads default set of integrations. Do not remove.
 default_config:
+homeassistant:
+  currency: AUD
+  elevation: !secret homeassistant_elevation
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  name: Moonya
+  time_zone: !secret homeassistant_timezone
+  unit_system: metric
 http:
   trusted_proxies:
   - 172.24.0.0/16
