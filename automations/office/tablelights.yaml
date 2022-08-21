@@ -2,27 +2,25 @@
 action:
 - service: light.toggle
   target:
-    entity_id: light.office_downlights
-alias: Office Downlights
+    entity_id: light.office_tablelights
+alias: office Downlights
 condition:
-- condition: not
+- condition: or
   conditions:
-  - condition: or
-    conditions:
-    - condition: state
-      entity_id: light.office_tablelights
-      for:
-        hours: 0
-        minutes: 0
-        seconds: 2
-      state: "on"
-    - condition: state
-      entity_id: light.office_tablelights
-      for:
-        hours: 0
-        minutes: 0
-        seconds: 2
-      state: "off"
+  - condition: state
+    entity_id: light.office_tablelights
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    state: "on"
+  - condition: state
+    entity_id: light.office_tablelights
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    state: "off"
 mode: single
 trigger:
 - entity_id: binary_sensor.office_switch_01

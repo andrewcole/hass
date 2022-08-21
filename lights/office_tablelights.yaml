@@ -1,0 +1,7 @@
+---
+entities:
+- light.office_tablelight_01
+- light.office_tablelight_02
+name: Office Tablelights
+platform: group
+unique_id: office_tablelights
