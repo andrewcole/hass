@@ -6,10 +6,10 @@ secrets="/config/secrets.yaml"
 touch "${secrets}"
 
 echo Configuring Home Assistant
-yq w -i "${haConfiguration}" --prettyPrint homeassistant_elevation -- ${HOMEASSISTANT_ELEVATION}
-yq w -i "${haConfiguration}" --prettyPrint homeassistant_latitude  -- ${HOMEASSISTANT_LATITUDE}
-yq w -i "${haConfiguration}" --prettyPrint homeassistant_longitude -- ${HOMEASSISTANT_LONGITUDE}
-yq w -i "${haConfiguration}" --prettyPrint homeassistant_timezone  -- ${TZ}
+yq w -i "${secrets}" --prettyPrint homeassistant_elevation -- ${HOMEASSISTANT_ELEVATION}
+yq w -i "${secrets}" --prettyPrint homeassistant_latitude  -- ${HOMEASSISTANT_LATITUDE}
+yq w -i "${secrets}" --prettyPrint homeassistant_longitude -- ${HOMEASSISTANT_LONGITUDE}
+yq w -i "${secrets}" --prettyPrint homeassistant_timezone  -- ${TZ}
 
 echo Configuring recorder
 yq d -i "${secrets}" recorder
