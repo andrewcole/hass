@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bash
-# This file should live in /etc/cont-init.d/
+# Installs yq
 
 if [ $(arch) == "aarch64" ]; then
     ARCH="arm64"
