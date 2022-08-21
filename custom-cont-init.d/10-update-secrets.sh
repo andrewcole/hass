@@ -3,6 +3,7 @@
 set -e
 
 secrets="/config/secrets.yaml"
+rm -f "${secrets}"
 touch "${secrets}"
 
 echo Configuring Home Assistant
@@ -12,7 +13,6 @@ yq w -i "${secrets}" --prettyPrint homeassistant_longitude -- ${HOMEASSISTANT_LO
 yq w -i "${secrets}" --prettyPrint homeassistant_timezone  -- ${TZ}
 
 echo Configuring recorder
-yq d -i "${secrets}" recorder
 yq w -i "${secrets}" --prettyPrint recorder_db_url -- mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?charset=utf8mb4
 
 echo Configuring InfluxDB
