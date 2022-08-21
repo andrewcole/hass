@@ -1,7 +1,8 @@
 ---
-automation:
+automation: !include_dir_list automations
 # Loads default set of integrations. Do not remove.
 default_config:
+group: !include_dir_named groups
 homeassistant:
   currency: AUD
   elevation: !secret homeassistant_elevation
@@ -20,9 +21,14 @@ influxdb:
   host: !secret influxdb_host
   port: !secret influxdb_port
   ssl: false
+light: !include_dir_list lights
 recorder:
   db_url: !secret recorder_db_url
 scene:
 script:
+sensor: !include_dir_list sensors
+switch: !include_dir_list switches
+template:
+- sensor: !include_dir_list templates/sensor
 tts:
 - platform: google_translate
