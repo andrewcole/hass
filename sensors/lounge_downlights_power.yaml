@@ -1,0 +1,11 @@
+---
+platform: template
+sensors:
+  lounge_downlights_power:
+    device_class: power
+    friendly_name: Lounge Downlights Power
+    unit_of_measurement: W
+    value_template: >-
+      {{
+        (states('sensor.lounge_power_01_power') | float) +
+        (states('sensor.lounge_power_02_power') | float) }}

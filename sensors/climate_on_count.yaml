@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  climate_on_count:
+    friendly_name: Number of climate not off
+    icon_template: mdi:snowflake-alert
+    value_template: >-
+      {{ states.climate | selectattr('state', 'ne', 'off') | list | length }}

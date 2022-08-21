@@ -1,0 +1,9 @@
+---
+platform: template
+sensors:
+  laundry_fans_power:
+    device_class: power
+    friendly_name: Laundry Fans Power
+    unit_of_measurement: W
+    value_template: >-
+      {{ (states('sensor.laundry_fan_01_power') | float) }}

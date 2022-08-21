@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  lights_on_count:
+    friendly_name: Number of lights on
+    icon_template: mdi:lightbulb-alert
+    value_template: >-
+      {{ states.light | selectattr('state', 'eq', 'on') | list | length }}

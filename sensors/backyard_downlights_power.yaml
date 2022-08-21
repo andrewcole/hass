@@ -1,0 +1,13 @@
+---
+platform: template
+sensors:
+  backyard_downlights_power:
+    device_class: power
+    friendly_name: Backyard Downlights Power
+    unit_of_measurement: W
+    value_template: >-
+      {{
+        (states('sensor.backyard_downlight_01_power') | float) +
+        (states('sensor.backyard_downlight_02_power') | float) +
+        (states('sensor.backyard_downlight_03_power') | float) +
+        (states('sensor.backyard_downlight_04_power') | float) }}
