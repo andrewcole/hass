@@ -1,0 +1,21 @@
+---
+action:
+- service: homeassistant.turn_off
+  target:
+    entity_id: group.ensuite_fans
+alias: Ensuite Fans Off
+condition:
+- condition: and
+  conditions:
+  - condition: state
+    entity_id:
+    - light.ensuite_downlights
+    state: "off"
+mode: single
+trigger:
+- entity_id:
+  - light.ensuite_downlights
+  for:
+    seconds: 15
+  platform: state
+  to: "off"

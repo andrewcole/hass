@@ -1,0 +1,16 @@
+---
+action:
+- service: light.toggle
+  target:
+    entity_id: light.driveway_downlights
+alias: Driveway Downlights
+mode: single
+trigger:
+- entity_id: binary_sensor.entrance_switch_02
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.entrance_switch_02
+  from: "off"
+  platform: state
+  to: "on"

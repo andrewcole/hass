@@ -1,0 +1,12 @@
+---
+action:
+- service: homeassistant.turn_on
+  target:
+    entity_id: group.ensuite_fans
+alias: Ensuite Fans On
+mode: single
+trigger:
+- entity_id:
+  - light.ensuite_downlights
+  platform: state
+  to: "on"

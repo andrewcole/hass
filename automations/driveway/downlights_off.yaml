@@ -1,0 +1,10 @@
+---
+action:
+- service: homeassistant.turn_off
+  target:
+    entity_id: light.driveway_downlights
+alias: Driveway Downlights Off
+mode: single
+trigger:
+- at: 00:01:00
+  platform: time

@@ -1,0 +1,32 @@
+---
+action:
+- service: light.toggle
+  target:
+    entity_id: light.kitchen_downlights_a
+alias: Switch - Kitchen Downlights A
+mode: single
+trigger:
+- entity_id: binary_sensor.kitchen_switch_02
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.kitchen_switch_05
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.kitchen_switch_06
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.kitchen_switch_02
+  from: "off"
+  platform: state
+  to: "on"
+- entity_id: binary_sensor.kitchen_switch_05
+  from: "off"
+  platform: state
+  to: "on"
+- entity_id: binary_sensor.kitchen_switch_06
+  from: "off"
+  platform: state
+  to: "on"

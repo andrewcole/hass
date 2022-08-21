@@ -1,0 +1,31 @@
+---
+action:
+- service: homeassistant.turn_off
+  target:
+    entity_id: light.laundry_nightlights
+alias: Laundry Nightlights Off
+condition:
+- condition: and
+  conditions:
+  - condition: state
+    entity_id:
+    - light.laundry_downlights
+    state: "off"
+  - condition: state
+    entity_id:
+    - sun.sun
+    state: above_horizon
+mode: single
+trigger:
+- event: start
+  platform: homeassistant
+- entity_id:
+  - light.laundry_downlights
+  for:
+    seconds: 15
+  platform: state
+  to: "off"
+- entity_id:
+  - sun.sun
+  platform: state
+  to: above_horizon

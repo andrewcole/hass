@@ -1,0 +1,16 @@
+---
+action:
+- service: homeassistant.turn_on
+  target:
+    entity_id: group.laundry_fans
+alias: Laundry Fans On
+mode: single
+trigger:
+- entity_id:
+  - light.laundry_downlights
+  platform: state
+  to: "on"
+- above: 10
+  entity_id:
+  - sensor.dryer_power
+  platform: numeric_state

@@ -1,0 +1,57 @@
+---
+action:
+- service: light.toggle
+  target:
+    entity_id: light.bedroom_tablelights
+alias: Bedroom Tablelights
+condition:
+- condition: or
+  conditions:
+  - condition: state
+    entity_id: light.bedroom_tablelights
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    state: "on"
+  - condition: state
+    entity_id: light.bedroom_tablelights
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    state: "off"
+mode: single
+trigger:
+- entity_id: binary_sensor.bedroom_switch_01
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.bedroom_switch_01
+  from: "off"
+  platform: state
+  to: "on"
+- entity_id: binary_sensor.bedroom_switch_02
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.bedroom_switch_02
+  from: "off"
+  platform: state
+  to: "on"
+- entity_id: binary_sensor.bedroom_switch_03
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.bedroom_switch_03
+  from: "off"
+  platform: state
+  to: "on"
+- entity_id: binary_sensor.bedroom_switch_04
+  from: "on"
+  platform: state
+  to: "off"
+- entity_id: binary_sensor.bedroom_switch_04
+  from: "off"
+  platform: state
+  to: "on"

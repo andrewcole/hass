@@ -1,0 +1,29 @@
+---
+action:
+- service: homeassistant.turn_off
+  target:
+    entity_id: group.laundry_fans
+alias: Laundry Fans Off
+condition:
+- condition: and
+  conditions:
+  - condition: state
+    entity_id:
+    - light.laundry_downlights
+    state: "off"
+  - below: 50
+    condition: numeric_state
+    entity_id: sensor.dryer_power
+mode: single
+trigger:
+- entity_id:
+  - light.laundry_downlights
+  for:
+    seconds: 15
+  platform: state
+  to: "off"
+- below: 10
+  entity_id: sensor.dryer_power
+  for:
+    seconds: 60
+  platform: numeric_state
