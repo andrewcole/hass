@@ -1,12 +1,12 @@
 ---
-automation: !include automations.yaml
+automation:
 # Loads default set of integrations. Do not remove.
 default_config:
 http:
   trusted_proxies:
   - 172.24.0.0/16
   use_x_forwarded_for: true
-scene: !include scenes.yaml
-script: !include scripts.yaml
+scene:
+script:
 tts:
 - platform: google_translate
