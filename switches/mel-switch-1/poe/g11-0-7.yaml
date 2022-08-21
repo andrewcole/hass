@@ -1,0 +1,9 @@
+---
+baseoid: 1.3.6.1.2.1.105.1.1.1.3.1.7
+community: 9800378e-5521-46fa-aba1-4e4667d6d8b7
+host: mel-switch-1.alfa.illallangi.enterprises
+name: Kitchen Google Mini
+payload_off: 2
+payload_on: 1
+platform: snmp
+version: 2c
