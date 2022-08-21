@@ -1,7 +1,7 @@
 ---
 platform: template
 sensors:
-  office_downlights_power:
+  office_tablelights_power:
     device_class: power
     friendly_name: Office Tablelights Power
     unit_of_measurement: W
