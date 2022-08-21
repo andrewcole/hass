@@ -6,6 +6,8 @@ http:
   trusted_proxies:
   - 172.24.0.0/16
   use_x_forwarded_for: true
+recorder:
+  db_url: !secret recorder_db_url
 scene:
 script:
 tts:
