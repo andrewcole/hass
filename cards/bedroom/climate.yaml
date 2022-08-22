@@ -1,0 +1,7 @@
+---
+cards:
+- entity: climate.bedroom_air_conditioner
+  type: thermostat
+columns: 1
+square: false
+type: grid

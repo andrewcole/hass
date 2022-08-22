@@ -1,0 +1,7 @@
+---
+cards:
+- entity: climate.kitchen_air_conditioner
+  type: thermostat
+columns: 1
+square: false
+type: grid
