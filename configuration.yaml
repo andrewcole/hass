@@ -22,6 +22,8 @@ influxdb:
   port: !secret influxdb_port
   ssl: false
 light: !include_dir_list lights
+lovelace:
+  mode: yaml
 recorder:
   db_url: !secret recorder_db_url
 scene:
