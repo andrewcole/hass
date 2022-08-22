@@ -4,8 +4,6 @@ entities:
 - sensor.lights_on_count
 - sensor.backyard_humidity
 - sensor.backyard_temperature
-- sensor.bedroom_humidity
-- sensor.bedroom_temperature
 - sensor.dryer_mode
 - sensor.dryer_power
 - sensor.ensuite_fan_01_power
