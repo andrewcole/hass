@@ -1,0 +1,7 @@
+---
+entities:
+- switch.ensuite_fan_01
+- switch.ensuite_fan_02
+show_header_toggle: true
+title: Fans
+type: entities

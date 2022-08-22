@@ -1,0 +1,5 @@
+---
+entities:
+- switch.backyard_access_point
+title: Access Points
+type: entities

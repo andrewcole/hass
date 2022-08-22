@@ -1,0 +1,6 @@
+---
+entities:
+- switch.downstairs_access_point
+- switch.upstairs_access_point
+title: Access Points
+type: entities
