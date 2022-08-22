@@ -369,3 +369,33 @@ views:
     type: weather-forecast
   path: default_view
   title: Home
+- cards: []
+  path: backyard
+  title: Backyard
+- cards: []
+  path: bedroom
+  title: Bedroom
+- cards: []
+  path: driveway
+  title: Driveway
+- cards: []
+  path: entrance
+  title: Entrance
+- cards: []
+  path: garage
+  title: Garage
+- cards: []
+  path: kitchen
+  title: Kitchen
+- cards: []
+  path: laundry
+  title: Laundry
+- cards: []
+  path: lounge
+  title: Lounge Room
+- cards: []
+  path: office
+  title: Office
+- cards: []
+  path: stairwell
+  title: Stairwell
