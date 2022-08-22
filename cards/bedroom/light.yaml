@@ -1,0 +1,13 @@
+---
+entities:
+- light.bedroom_downlight_01
+- light.bedroom_downlight_02
+- light.bedroom_downlight_03
+- light.bedroom_downlight_04
+- light.bedroom_downlights
+- light.bedroom_lights
+- light.bedroom_tablelight_01
+- light.bedroom_tablelight_02
+- light.bedroom_tablelights
+title: Lights
+type: entities

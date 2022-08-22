@@ -1,0 +1,7 @@
+---
+entities:
+- light.driveway_downlight_01
+- light.driveway_downlights
+- light.driveway_lights
+title: Lights
+type: entities

@@ -1,0 +1,9 @@
+---
+entities:
+- light.ensuite_downlight_01
+- light.ensuite_downlights
+- light.ensuite_lights
+- light.ensuite_nightlight_01
+- light.ensuite_nightlights
+title: Lights
+type: entities

@@ -1,0 +1,10 @@
+---
+entities:
+- light.backyard_downlight_01
+- light.backyard_downlight_02
+- light.backyard_downlight_03
+- light.backyard_downlight_04
+- light.backyard_downlights
+- light.backyard_lights
+title: Lights
+type: entities

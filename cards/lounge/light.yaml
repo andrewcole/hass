@@ -1,0 +1,16 @@
+---
+entities:
+- light.lounge_downlight_01
+- light.lounge_downlight_02
+- light.lounge_downlight_03
+- light.lounge_downlight_04
+- light.lounge_downlight_05
+- light.lounge_downlights
+- light.lounge_lights
+- light.lounge_tablelight_01
+- light.lounge_tablelight_02
+- light.lounge_tablelight_03
+- light.lounge_tablelight_04
+- light.lounge_tablelights
+title: Lights
+type: entities

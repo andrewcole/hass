@@ -1,0 +1,7 @@
+---
+entities:
+- light.entrance_downlight_01
+- light.entrance_downlights
+- light.entrance_lights
+title: Lights
+type: entities

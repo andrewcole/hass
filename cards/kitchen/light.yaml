@@ -1,0 +1,22 @@
+---
+entities:
+- light.kitchen_downlight_01
+- light.kitchen_downlight_02
+- light.kitchen_downlight_03
+- light.kitchen_downlight_04
+- light.kitchen_downlight_05
+- light.kitchen_downlight_06
+- light.kitchen_downlight_07
+- light.kitchen_downlight_08
+- light.kitchen_downlight_09
+- light.kitchen_downlight_10
+- light.kitchen_downlight_11
+- light.kitchen_downlight_12
+- light.kitchen_downlights
+- light.kitchen_downlights_a
+- light.kitchen_downlights_b
+- light.kitchen_lights
+- light.kitchen_nightlight_01
+- light.kitchen_nightlights
+title: Lights
+type: entities

@@ -1,0 +1,10 @@
+---
+entities:
+- light.stairwell_downlight_01
+- light.stairwell_downlight_02
+- light.stairwell_downlight_03
+- light.stairwell_downlights
+- light.stairwell_nightlight_01
+- light.stairwell_nightlights
+title: Lights
+type: entities

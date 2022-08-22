@@ -1,0 +1,7 @@
+---
+entities:
+- light.garage_downlight_01
+- light.garage_downlight_02
+- light.garage_downlights
+title: Lights
+type: entities

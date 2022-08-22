@@ -1,0 +1,8 @@
+---
+entities:
+- light.laundry_downlight_01
+- light.laundry_downlights
+- light.laundry_lights
+- light.laundry_nightlights
+title: Lights
+type: entities
