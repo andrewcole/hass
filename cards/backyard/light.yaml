@@ -1,10 +1,16 @@
 ---
 entities:
-- light.backyard_downlight_01
-- light.backyard_downlight_02
-- light.backyard_downlight_03
-- light.backyard_downlight_04
-- light.backyard_downlights
 - light.backyard_lights
+- sensor.backyard_lights_power
+- light.backyard_downlights
+- sensor.backyard_downlights_power
+- light.backyard_downlight_01
+- sensor.backyard_downlight_01_power
+- light.backyard_downlight_02
+- sensor.backyard_downlight_02_power
+- light.backyard_downlight_03
+- sensor.backyard_downlight_03_power
+- light.backyard_downlight_04
+- sensor.backyard_downlight_04_power
 title: Lights
 type: entities

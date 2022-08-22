@@ -1,9 +1,14 @@
 ---
 entities:
-- light.ensuite_downlight_01
-- light.ensuite_downlights
 - light.ensuite_lights
-- light.ensuite_nightlight_01
+- sensor.ensuite_lights_power
+- light.ensuite_downlights
+- sensor.ensuite_downlights_power
+- light.ensuite_downlight_01
+- sensor.ensuite_downlight_01_power
 - light.ensuite_nightlights
+- sensor.ensuite_nightlights_power
+- light.ensuite_nightlight_01
+- sensor.ensuite_nightlight_01_power
 title: Lights
 type: entities

@@ -1,7 +1,10 @@
 ---
 entities:
-- light.entrance_downlight_01
-- light.entrance_downlights
 - light.entrance_lights
+- sensor.entrance_lights_power
+- light.entrance_downlights
+- sensor.entrance_downlights_power
+- light.entrance_downlight_01
+- sensor.entrance_downlight_01_power
 title: Lights
 type: entities

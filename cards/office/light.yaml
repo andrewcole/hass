@@ -1,18 +1,26 @@
 ---
 entities:
 - entity: light.office_lights
+- sensor.office_lights_power
 - entity: light.office_downlights
+- sensor.office_downlights_power
+- sensor.office_power_01_power
+- sensor.office_power_02_power
+- sensor.office_power_03_power
+- sensor.office_power_04_power
 - entity: light.office_downlight_01
 - entity: light.office_downlight_02
 - entity: light.office_downlight_03
+- entity: light.office_downlight_04
 - entity: light.office_tablelights
+- sensor.office_tablelights_power
 - entity: light.office_tablelight_01
   name: Tablelight 01
-- entity: sensor.office_tablelight_01_energy
-  name: Tablelight 01 Energy
+- entity: sensor.office_tablelight_01_power
+  name: Tablelight 01 Power
 - entity: light.office_tablelight_02
   name: Tablelight 02
-- entity: sensor.office_tablelight_02_energy
-  name: Tablelight 02 Energy
+- entity: sensor.office_tablelight_02_power
+  name: Tablelight 02 Power
 title: Lights
 type: entities

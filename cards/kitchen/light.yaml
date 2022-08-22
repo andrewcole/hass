@@ -1,5 +1,14 @@
 ---
 entities:
+- light.kitchen_lights
+- light.kitchen_downlights
+- sensor.kitchen_downlights_power
+- light.kitchen_downlights_a
+- light.kitchen_downlights_b
+- sensor.kitchen_power_01_power
+- sensor.kitchen_power_02_power
+- sensor.kitchen_power_03_power
+- sensor.kitchen_power_04_power
 - light.kitchen_downlight_01
 - light.kitchen_downlight_02
 - light.kitchen_downlight_03
@@ -12,11 +21,7 @@ entities:
 - light.kitchen_downlight_10
 - light.kitchen_downlight_11
 - light.kitchen_downlight_12
-- light.kitchen_downlights
-- light.kitchen_downlights_a
-- light.kitchen_downlights_b
-- light.kitchen_lights
-- light.kitchen_nightlight_01
 - light.kitchen_nightlights
+- light.kitchen_nightlight_01
 title: Lights
 type: entities

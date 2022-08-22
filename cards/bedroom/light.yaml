@@ -1,13 +1,18 @@
 ---
 entities:
-- light.bedroom_downlight_01
-- light.bedroom_downlight_02
-- light.bedroom_downlight_03
-- light.bedroom_downlight_04
-- light.bedroom_downlights
 - light.bedroom_lights
+- light.bedroom_downlights
+- sensor.bedroom_downlights_power
+- light.bedroom_downlight_01
+- sensor.bedroom_downlight_01_power
+- light.bedroom_downlight_02
+- sensor.bedroom_downlight_02_power
+- light.bedroom_downlight_03
+- sensor.bedroom_downlight_03_power
+- light.bedroom_downlight_04
+- sensor.bedroom_downlight_04_power
+- light.bedroom_tablelights
 - light.bedroom_tablelight_01
 - light.bedroom_tablelight_02
-- light.bedroom_tablelights
 title: Lights
 type: entities

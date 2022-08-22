@@ -1,7 +1,10 @@
 ---
 entities:
-- light.driveway_downlight_01
-- light.driveway_downlights
 - light.driveway_lights
+- sensor.driveway_lights_power
+- light.driveway_downlights
+- sensor.driveway_downlights_power
+- light.driveway_downlight_01
+- sensor.driveway_downlight_01_power
 title: Lights
 type: entities

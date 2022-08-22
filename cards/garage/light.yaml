@@ -1,7 +1,12 @@
 ---
 entities:
-- light.garage_downlight_01
-- light.garage_downlight_02
+- light.garage_lights
+- sensor.garage_lights_power
 - light.garage_downlights
+- sensor.garage_downlights_power
+- light.garage_downlight_01
+- sensor.garage_downlight_01_power
+- light.garage_downlight_02
+- sensor.garage_downlight_02_power
 title: Lights
 type: entities
