@@ -1,6 +1,6 @@
 ---
 cards:
-- entity: media_player.all_speakers
+- entity: media_player.garage_speaker
   type: media-control
 columns: 1
 square: false
