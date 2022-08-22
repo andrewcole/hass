@@ -1,0 +1,5 @@
+---
+entities:
+- sensor.network_rack_power
+title: Sensor
+type: entities

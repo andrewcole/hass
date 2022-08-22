@@ -1,0 +1,10 @@
+---
+cards:
+- entities:
+  - sensor.backyard_humidity
+  - sensor.backyard_temperature
+  type: entities
+columns: 1
+square: false
+title: Climate
+type: grid

@@ -2,6 +2,11 @@
 cards:
 - entity: climate.kitchen_air_conditioner
   type: thermostat
+- entities:
+  - sensor.kitchen_humidity
+  - sensor.kitchen_temperature
+  type: entities
 columns: 1
 square: false
+title: Climate
 type: grid

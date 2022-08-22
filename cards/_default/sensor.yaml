@@ -2,27 +2,7 @@
 entities:
 - sensor.climate_on_count
 - sensor.lights_on_count
-- sensor.backyard_humidity
-- sensor.backyard_temperature
-- sensor.dryer_mode
-- sensor.dryer_power
-- sensor.ensuite_fan_01_power
-- sensor.ensuite_fan_02_power
-- sensor.ensuite_fans_power
-- sensor.fridge_power
-- sensor.garage_humidity
-- sensor.garage_temperature
 - sensor.george_moisture_sensor
 - sensor.gracie_moisture_sensor
-- sensor.kitchen_humidity
-- sensor.kitchen_temperature
-- sensor.laundry_fan_01_power
-- sensor.laundry_fans_power
-- sensor.laundry_humidity
-- sensor.laundry_temperature
-- sensor.server_rack_energy
-- sensor.server_rack_power
-- sensor.server_rack_total_daily_energy
-- sensor.washing_machine_power
 title: Sensor
 type: entities

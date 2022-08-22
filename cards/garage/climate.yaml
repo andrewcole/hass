@@ -1,0 +1,10 @@
+---
+cards:
+- entities:
+  - sensor.garage_humidity
+  - sensor.garage_temperature
+  type: entities
+columns: 1
+square: false
+title: Climate
+type: grid

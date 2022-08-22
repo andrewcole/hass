@@ -1,0 +1,5 @@
+---
+entities:
+- sensor.washing_machine_power
+title: Sensor
+type: entities
