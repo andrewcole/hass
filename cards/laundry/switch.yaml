@@ -1,0 +1,6 @@
+---
+entities:
+- switch.laundry_fan_01
+show_header_toggle: true
+title: Fans
+type: entities

@@ -1,0 +1,27 @@
+---
+cards:
+- entity: media_player.all_speakers
+  type: media-control
+- entity: media_player.bedroom_speaker
+  type: media-control
+- entity: media_player.garage_speaker
+  type: media-control
+- entity: media_player.kitchen_shield
+  type: media-control
+- entity: media_player.kitchen_speaker
+  type: media-control
+- entity: media_player.lounge_room_tv_2
+  type: media-control
+- entity: media_player.lounge_room_tv
+  type: media-control
+- entity: media_player.lounge_shield
+  type: media-control
+- entity: media_player.lounge_speaker
+  type: media-control
+- entity: media_player.office_shield
+  type: media-control
+- entity: media_player.office_speaker
+  type: media-control
+columns: 1
+square: false
+type: grid

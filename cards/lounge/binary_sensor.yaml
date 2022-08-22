@@ -1,0 +1,6 @@
+---
+entities:
+- binary_sensor.lounge_switch_01
+- binary_sensor.lounge_switch_02
+title: Switches
+type: entities

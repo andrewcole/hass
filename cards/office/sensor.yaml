@@ -1,0 +1,28 @@
+---
+entities:
+- entity: light.office_tablelight_02
+  name: Tablelight 02
+- entity: sensor.office_tablelight_02_total_daily_energy
+  name: Tablelight 02 Total Daily Energy
+- entity: sensor.office_tablelight_02_voltage
+  name: Tablelight 02 Voltage
+- entity: sensor.office_tablelight_02_current
+  name: Tablelight 02 Current
+- entity: sensor.office_tablelight_02_power
+  name: Tablelight 02 Power
+- entity: sensor.office_tablelight_02_energy
+  name: Tablelight 02 Energy
+- entity: light.office_tablelight_01
+  name: Tablelight 01
+- entity: sensor.office_tablelight_01_total_daily_energy
+  name: Tablelight 01 Total Daily Energy
+- entity: sensor.office_tablelight_01_voltage
+  name: Tablelight 01 Voltage
+- entity: sensor.office_tablelight_01_current
+  name: Tablelight 01 Current
+- entity: sensor.office_tablelight_01_power
+  name: Tablelight 01 Power
+- entity: sensor.office_tablelight_01_energy
+  name: Tablelight 01 Energy
+title: Lights
+type: entities

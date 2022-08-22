@@ -1,0 +1,8 @@
+---
+entities:
+- binary_sensor.kitchen_switch_01
+- binary_sensor.kitchen_switch_02
+- binary_sensor.kitchen_switch_03
+- binary_sensor.kitchen_switch_04
+title: Switches
+type: entities
