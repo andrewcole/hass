@@ -1,0 +1,5 @@
+---
+entities:
+- sensor.climate_on_count
+title: Climate
+type: entities

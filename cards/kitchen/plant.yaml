@@ -1,0 +1,5 @@
+---
+entities:
+- sensor.george_moisture_sensor
+title: Plants
+type: entities

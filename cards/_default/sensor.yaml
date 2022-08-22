@@ -1,8 +1,0 @@
----
-entities:
-- sensor.climate_on_count
-- sensor.lights_on_count
-- sensor.george_moisture_sensor
-- sensor.gracie_moisture_sensor
-title: Sensor
-type: entities

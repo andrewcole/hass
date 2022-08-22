@@ -1,0 +1,5 @@
+---
+entities:
+- sensor.lights_on_count
+title: Light
+type: entities
