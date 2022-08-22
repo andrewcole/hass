@@ -2,78 +2,11 @@
 title: Moonya
 views:
 - cards:
-  - entities:
-    - entity: light.office_tablelight_02
-      name: Tablelight 02
-    - entity: sensor.office_tablelight_02_total_daily_energy
-      name: Tablelight 02 Total Daily Energy
-    - entity: sensor.office_tablelight_02_voltage
-      name: Tablelight 02 Voltage
-    - entity: sensor.office_tablelight_02_current
-      name: Tablelight 02 Current
-    - entity: sensor.office_tablelight_02_power
-      name: Tablelight 02 Power
-    - entity: sensor.office_tablelight_02_energy
-      name: Tablelight 02 Energy
-    - entity: light.office_tablelight_01
-      name: Tablelight 01
-    - entity: sensor.office_tablelight_01_total_daily_energy
-      name: Tablelight 01 Total Daily Energy
-    - entity: sensor.office_tablelight_01_voltage
-      name: Tablelight 01 Voltage
-    - entity: sensor.office_tablelight_01_current
-      name: Tablelight 01 Current
-    - entity: sensor.office_tablelight_01_power
-      name: Tablelight 01 Power
-    - entity: sensor.office_tablelight_01_energy
-      name: Tablelight 01 Energy
-    title: Office
-    type: entities
   - link_dashboard: true
     title: Energy distribution today
     type: energy-distribution
   - entities:
     - person.andrew_cole
-    type: entities
-  - entities:
-    - switch.laundry_fan_01
-    show_header_toggle: true
-    title: Laundry Fans
-    type: entities
-  - entities:
-    - binary_sensor.bedroom_switch_01
-    - binary_sensor.bedroom_switch_02
-    - binary_sensor.bedroom_switch_03
-    - binary_sensor.bedroom_switch_04
-    - binary_sensor.ensuite_switch_01
-    - binary_sensor.ensuite_switch_02
-    - binary_sensor.ensuite_switch_03
-    - binary_sensor.ensuite_switch_04
-    - binary_sensor.entrance_switch_01
-    - binary_sensor.entrance_switch_02
-    - binary_sensor.garage_motion_01
-    - binary_sensor.garage_motion_02
-    - binary_sensor.garage_switch_01
-    - binary_sensor.garage_switch_02
-    - binary_sensor.kitchen_switch_01
-    - binary_sensor.kitchen_switch_02
-    - binary_sensor.kitchen_switch_03
-    - binary_sensor.kitchen_switch_04
-    - binary_sensor.kitchen_switch_05
-    - binary_sensor.kitchen_switch_06
-    - binary_sensor.laundry_switch_01
-    - binary_sensor.laundry_switch_02
-    - binary_sensor.lounge_switch_01
-    - binary_sensor.lounge_switch_02
-    - binary_sensor.office_switch_01
-    - binary_sensor.office_switch_02
-    - binary_sensor.office_switch_03
-    - binary_sensor.office_switch_04
-    - binary_sensor.stairwell_switch_01
-    - binary_sensor.stairwell_switch_02
-    - binary_sensor.stairwell_switch_03
-    - binary_sensor.stairwell_switch_04
-    title: Binary sensor
     type: entities
   - cards:
     - entity: climate.bedroom_air_conditioner
@@ -372,30 +305,134 @@ views:
 - cards: []
   path: backyard
   title: Backyard
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.bedroom_switch_01
+    - binary_sensor.bedroom_switch_02
+    - binary_sensor.bedroom_switch_03
+    - binary_sensor.bedroom_switch_04
+    title: Switches
+    type: entities
   path: bedroom
   title: Bedroom
 - cards: []
   path: driveway
   title: Driveway
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.ensuite_switch_01
+    - binary_sensor.ensuite_switch_02
+    - binary_sensor.ensuite_switch_03
+    - binary_sensor.ensuite_switch_04
+    title: Switches
+    type: entities
+  path: ensuite
+  title: Ensuite
+- cards:
+  - entities:
+    - binary_sensor.entrance_switch_01
+    - binary_sensor.entrance_switch_02
+    title: Switches
+    type: entities
   path: entrance
   title: Entrance
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.garage_motion_01
+    - binary_sensor.garage_motion_02
+    - binary_sensor.garage_switch_01
+    - binary_sensor.garage_switch_02
+    title: Switches
+    type: entities
   path: garage
   title: Garage
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.laundry_switch_01
+    - binary_sensor.laundry_switch_02
+    - binary_sensor.lounge_switch_01
+    - binary_sensor.lounge_switch_02
+    - binary_sensor.office_switch_01
+    - binary_sensor.office_switch_02
+    - binary_sensor.office_switch_03
+    - binary_sensor.office_switch_04
+    - binary_sensor.stairwell_switch_01
+    - binary_sensor.stairwell_switch_02
+    - binary_sensor.stairwell_switch_03
+    - binary_sensor.stairwell_switch_04
+    title: Switches
+    type: entities
   path: kitchen
   title: Kitchen
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.laundry_switch_01
+    - binary_sensor.laundry_switch_02
+    title: Switches
+    type: entities
+  - entities:
+    - switch.laundry_fan_01
+    show_header_toggle: true
+    title: Fans
+    type: entities
   path: laundry
   title: Laundry
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.lounge_switch_01
+    - binary_sensor.lounge_switch_02
+    title: Switches
+    type: entities
   path: lounge
   title: Lounge Room
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.office_switch_01
+    - binary_sensor.office_switch_02
+    - binary_sensor.office_switch_03
+    - binary_sensor.office_switch_04
+    title: Switches
+    type: entities
+  - entities:
+    - entity: light.office_tablelight_02
+      name: Tablelight 02
+    - entity: sensor.office_tablelight_02_total_daily_energy
+      name: Tablelight 02 Total Daily Energy
+    - entity: sensor.office_tablelight_02_voltage
+      name: Tablelight 02 Voltage
+    - entity: sensor.office_tablelight_02_current
+      name: Tablelight 02 Current
+    - entity: sensor.office_tablelight_02_power
+      name: Tablelight 02 Power
+    - entity: sensor.office_tablelight_02_energy
+      name: Tablelight 02 Energy
+    - entity: light.office_tablelight_01
+      name: Tablelight 01
+    - entity: sensor.office_tablelight_01_total_daily_energy
+      name: Tablelight 01 Total Daily Energy
+    - entity: sensor.office_tablelight_01_voltage
+      name: Tablelight 01 Voltage
+    - entity: sensor.office_tablelight_01_current
+      name: Tablelight 01 Current
+    - entity: sensor.office_tablelight_01_power
+      name: Tablelight 01 Power
+    - entity: sensor.office_tablelight_01_energy
+      name: Tablelight 01 Energy
+    title: Lights
+    type: entities
   path: office
   title: Office
-- cards: []
+- cards:
+  - entities:
+    - binary_sensor.office_switch_01
+    - binary_sensor.office_switch_02
+    - binary_sensor.office_switch_03
+    - binary_sensor.office_switch_04
+    - binary_sensor.stairwell_switch_01
+    - binary_sensor.stairwell_switch_02
+    - binary_sensor.stairwell_switch_03
+    - binary_sensor.stairwell_switch_04
+    title: Switches
+    type: entities
   path: stairwell
   title: Stairwell
