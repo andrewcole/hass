@@ -1,5 +1,11 @@
 ---
-entities:
-- sensor.george_moisture_sensor
+cards:
+- entities:
+  - sensor.george_moisture_sensor
+  - sensor.ficus_moisture_sensor
+  title: Plants
+  type: entities
+columns: 1
+square: false
 title: Plants
-type: entities
+type: grid
