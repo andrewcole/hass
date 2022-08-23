@@ -1,13 +1,15 @@
 ---
 cards:
-- entity: media_player.lounge_room_tv_2
-  type: media-control
 - entity: media_player.lounge_room_tv
   type: media-control
 - entity: media_player.lounge_shield
   type: media-control
 - entity: media_player.lounge_speaker
   type: media-control
+- entities:
+  - switch.lounge_google_mini
+  type: entities
 columns: 1
 square: false
+title: Media Players
 type: grid
