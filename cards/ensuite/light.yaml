@@ -1,14 +1,18 @@
 ---
-entities:
-- light.ensuite_lights
-- sensor.ensuite_lights_power
-- light.ensuite_downlights
-- sensor.ensuite_downlights_power
-- light.ensuite_downlight_01
-- sensor.ensuite_downlight_01_power
-- light.ensuite_nightlights
-- sensor.ensuite_nightlights_power
-- light.ensuite_nightlight_01
-- sensor.ensuite_nightlight_01_power
+cards:
+  entities:
+  - light.ensuite_lights
+  - sensor.ensuite_lights_power
+  - light.ensuite_downlights
+  - sensor.ensuite_downlights_power
+  - light.ensuite_downlight_01
+  - sensor.ensuite_downlight_01_power
+  - light.ensuite_nightlights
+  - sensor.ensuite_nightlights_power
+  - light.ensuite_nightlight_01
+  - sensor.ensuite_nightlight_01_power
+  type: entities
+columns: 1
+square: false
 title: Lights
-type: entities
+type: grid

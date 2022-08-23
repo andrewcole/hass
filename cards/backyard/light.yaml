@@ -1,16 +1,20 @@
 ---
-entities:
-- light.backyard_lights
-- sensor.backyard_lights_power
-- light.backyard_downlights
-- sensor.backyard_downlights_power
-- light.backyard_downlight_01
-- sensor.backyard_downlight_01_power
-- light.backyard_downlight_02
-- sensor.backyard_downlight_02_power
-- light.backyard_downlight_03
-- sensor.backyard_downlight_03_power
-- light.backyard_downlight_04
-- sensor.backyard_downlight_04_power
+cards:
+  entities:
+  - light.backyard_lights
+  - sensor.backyard_lights_power
+  - light.backyard_downlights
+  - sensor.backyard_downlights_power
+  - light.backyard_downlight_01
+  - sensor.backyard_downlight_01_power
+  - light.backyard_downlight_02
+  - sensor.backyard_downlight_02_power
+  - light.backyard_downlight_03
+  - sensor.backyard_downlight_03_power
+  - light.backyard_downlight_04
+  - sensor.backyard_downlight_04_power
+  type: entities
+columns: 1
+square: false
 title: Lights
-type: entities
+type: grid

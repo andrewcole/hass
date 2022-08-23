@@ -1,18 +1,22 @@
 ---
-entities:
-- light.stairwell_lights
-- sensor.stairwell_lights_power
-- light.stairwell_downlights
-- sensor.stairwell_downlights_power
-- light.stairwell_downlight_01
-- sensor.stairwell_downlight_01_power
-- light.stairwell_downlight_02
-- sensor.stairwell_downlight_02_power
-- light.stairwell_downlight_03
-- sensor.stairwell_downlight_03_power
-- light.stairwell_nightlights
-- sensor.stairwell_nightlights_power
-- light.stairwell_nightlight_01
-- sensor.stairwell_nightlight_01_power
+cards:
+  entities:
+  - light.stairwell_lights
+  - sensor.stairwell_lights_power
+  - light.stairwell_downlights
+  - sensor.stairwell_downlights_power
+  - light.stairwell_downlight_01
+  - sensor.stairwell_downlight_01_power
+  - light.stairwell_downlight_02
+  - sensor.stairwell_downlight_02_power
+  - light.stairwell_downlight_03
+  - sensor.stairwell_downlight_03_power
+  - light.stairwell_nightlights
+  - sensor.stairwell_nightlights_power
+  - light.stairwell_nightlight_01
+  - sensor.stairwell_nightlight_01_power
+  type: entities
+columns: 1
+square: false
 title: Lights
-type: entities
+type: grid

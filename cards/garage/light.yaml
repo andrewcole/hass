@@ -1,12 +1,16 @@
 ---
-entities:
-- light.garage_lights
-- sensor.garage_lights_power
-- light.garage_downlights
-- sensor.garage_downlights_power
-- light.garage_downlight_01
-- sensor.garage_downlight_01_power
-- light.garage_downlight_02
-- sensor.garage_downlight_02_power
+cards:
+  entities:
+  - light.garage_lights
+  - sensor.garage_lights_power
+  - light.garage_downlights
+  - sensor.garage_downlights_power
+  - light.garage_downlight_01
+  - sensor.garage_downlight_01_power
+  - light.garage_downlight_02
+  - sensor.garage_downlight_02_power
+  type: entities
+columns: 1
+square: false
 title: Lights
-type: entities
+type: grid

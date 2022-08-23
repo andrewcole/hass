@@ -1,6 +1,10 @@
 ---
-entities:
-- switch.downstairs_access_point
-- switch.upstairs_access_point
+cards:
+  entities:
+  - switch.downstairs_access_point
+  - switch.upstairs_access_point
+  type: entities
+columns: 1
+square: false
 title: Access Points
-type: entities
+type: grid

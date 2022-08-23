@@ -1,16 +1,20 @@
 ---
-entities:
-- light.laundry_lights
-- sensor.laundry_lights_power
-- light.laundry_downlights
-- sensor.laundry_downlights_power
-- light.laundry_downlight_01
-- sensor.laundry_downlight_01_power
-- light.laundry_nightlights
-- sensor.laundry_nightlights_power
-- light.laundry_nightlight_01
-- sensor.laundry_nightlight_01_power
-- light.laundry_nightlight_02
-- sensor.laundry_nightlight_02_power
+cards:
+  entities:
+  - light.laundry_lights
+  - sensor.laundry_lights_power
+  - light.laundry_downlights
+  - sensor.laundry_downlights_power
+  - light.laundry_downlight_01
+  - sensor.laundry_downlight_01_power
+  - light.laundry_nightlights
+  - sensor.laundry_nightlights_power
+  - light.laundry_nightlight_01
+  - sensor.laundry_nightlight_01_power
+  - light.laundry_nightlight_02
+  - sensor.laundry_nightlight_02_power
+  type: entities
+columns: 1
+square: false
 title: Lights
-type: entities
+type: grid
