@@ -2,7 +2,9 @@
 cards:
 - entities:
   - sensor.dishwasher_power
+  - sensor.dishwasher_mode
   - sensor.fridge_power
+  - sensor.fridge_mode
   - switch.virtual_reality_lighthouses
   type: entities
 columns: 1
