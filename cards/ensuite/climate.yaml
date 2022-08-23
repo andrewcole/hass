@@ -1,7 +1,8 @@
 ---
 cards:
 - entities:
-  - sensor.climate_on_count
+  - sensor.ensuite_humidity
+  - sensor.ensuite_temperature
   type: entities
 columns: 1
 square: false
