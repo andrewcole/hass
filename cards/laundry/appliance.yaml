@@ -2,6 +2,7 @@
 cards:
 - entities:
   - sensor.washing_machine_power
+  - sensor.washing_machine_mode
   - sensor.dryer_power
   - sensor.dryer_mode
   type: entities
