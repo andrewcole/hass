@@ -1,6 +1,0 @@
----
-entities:
-- sensor.dryer_mode
-- sensor.dryer_power
-title: Sensor
-type: entities

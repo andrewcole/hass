@@ -1,0 +1,11 @@
+---
+cards:
+- entities:
+  - sensor.washing_machine_power
+  - sensor.dryer_power
+  - sensor.dryer_mode
+  type: entities
+columns: 1
+square: false
+title: Appliances
+type: grid
