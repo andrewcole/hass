@@ -1,5 +1,0 @@
----
-entities:
-- sensor.server_rack_power
-title: Sensor
-type: entities

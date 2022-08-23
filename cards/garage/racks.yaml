@@ -1,0 +1,10 @@
+---
+cards:
+- entities:
+  - sensor.network_rack_power
+  - sensor.server_rack_power
+  type: entities
+columns: 1
+square: false
+title: Racks
+type: grid
