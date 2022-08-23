@@ -1,9 +1,0 @@
----
-entities:
-- switch.laundry_fans
-- sensor.laundry_fans_power
-- switch.laundry_fan_01
-- sensor.laundry_fan_01_power
-show_header_toggle: true
-title: Fans
-type: entities

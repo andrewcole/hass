@@ -1,6 +1,14 @@
 ---
 cards:
 - entities:
+  - switch.ensuite_fans
+  - sensor.ensuite_fans_power
+  - switch.ensuite_fan_01
+  - sensor.ensuite_fan_01_power
+  - switch.ensuite_fan_02
+  - sensor.ensuite_fan_02_power
+  type: entities
+- entities:
   - sensor.ensuite_humidity
   - sensor.ensuite_temperature
   type: entities

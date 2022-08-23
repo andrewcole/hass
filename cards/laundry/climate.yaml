@@ -1,6 +1,12 @@
 ---
 cards:
 - entities:
+  - switch.laundry_fans
+  - sensor.laundry_fans_power
+  - switch.laundry_fan_01
+  - sensor.laundry_fan_01_power
+  type: entities
+- entities:
   - sensor.laundry_humidity
   - sensor.laundry_temperature
   type: entities
