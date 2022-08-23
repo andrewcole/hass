@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - switch.downstairs_access_point
   - switch.upstairs_access_point
   type: entities
