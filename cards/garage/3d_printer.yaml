@@ -1,0 +1,9 @@
+---
+cards:
+- entities:
+  - sensor.3d_printer_power
+  type: entities
+columns: 1
+square: false
+title: 3D Printers
+type: grid
