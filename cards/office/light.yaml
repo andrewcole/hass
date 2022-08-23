@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - entity: light.office_lights
   - sensor.office_lights_power
   - entity: light.office_downlights

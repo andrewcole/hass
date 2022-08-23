@@ -1,5 +1,9 @@
 ---
-entities:
-- sensor.lights_on_count
-title: Light
-type: entities
+cards:
+- entities:
+  - sensor.lights_on_count
+  type: entities
+columns: 1
+square: false
+title: Lights
+type: grid

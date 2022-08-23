@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - light.entrance_lights
   - sensor.entrance_lights_power
   - light.entrance_downlights

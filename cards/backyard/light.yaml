@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - light.backyard_lights
   - sensor.backyard_lights_power
   - light.backyard_downlights

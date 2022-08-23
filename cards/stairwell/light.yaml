@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - light.stairwell_lights
   - sensor.stairwell_lights_power
   - light.stairwell_downlights

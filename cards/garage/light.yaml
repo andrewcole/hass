@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - light.garage_lights
   - sensor.garage_lights_power
   - light.garage_downlights

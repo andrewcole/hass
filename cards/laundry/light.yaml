@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - light.laundry_lights
   - sensor.laundry_lights_power
   - light.laundry_downlights

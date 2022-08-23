@@ -1,6 +1,6 @@
 ---
 cards:
-  entities:
+- entities:
   - light.bedroom_lights
   - light.bedroom_downlights
   - sensor.bedroom_downlights_power
