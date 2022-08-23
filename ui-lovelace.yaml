@@ -7,6 +7,9 @@ views:
 - cards: !include_dir_list cards/backyard
   path: backyard
   title: Backyard
+- cards: !include_dir_list cards/bathroom
+  path: bathroom
+  title: Bathroom
 - cards: !include_dir_list cards/bedroom
   path: bedroom
   title: Bedroom

@@ -1,0 +1,18 @@
+---
+cards:
+- entities:
+  - switch.bathroom_fans
+  - sensor.bathroom_fans_power
+  - switch.bathroom_fan_01
+  - sensor.bathroom_fan_01_power
+  - switch.bathroom_fan_02
+  - sensor.bathroom_fan_02_power
+  type: entities
+- entities:
+  - sensor.bathroom_humidity
+  - sensor.bathroom_temperature
+  type: entities
+columns: 1
+square: false
+title: Climate
+type: grid

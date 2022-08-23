@@ -1,0 +1,18 @@
+---
+cards:
+- entities:
+  - light.bathroom_lights
+  - sensor.bathroom_lights_power
+  - light.bathroom_downlights
+  - sensor.bathroom_downlights_power
+  - light.bathroom_downlight_01
+  - sensor.bathroom_downlight_01_power
+  - light.bathroom_nightlights
+  - sensor.bathroom_nightlights_power
+  - light.bathroom_nightlight_01
+  - sensor.bathroom_nightlight_01_power
+  type: entities
+columns: 1
+square: false
+title: Lights
+type: grid
