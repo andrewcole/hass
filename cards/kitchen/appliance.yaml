@@ -4,7 +4,6 @@ cards:
   - sensor.dishwasher_power
   - sensor.fridge_power
   - switch.virtual_reality_lighthouses
-  title: Virtual Reality Lighthouses
   type: entities
 columns: 1
 square: false

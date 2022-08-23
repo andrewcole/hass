@@ -2,7 +2,6 @@
 cards:
 - entities:
   - sensor.gracie_moisture_sensor
-  title: Plants
   type: entities
 columns: 1
 square: false
