@@ -1,5 +1,8 @@
 ---
 cards:
+- entity: weather.forecast_moonya
+  show_forecast: false
+  type: weather-forecast
 - entities:
   - sensor.climate_on_count
   type: entities
