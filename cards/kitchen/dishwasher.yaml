@@ -1,5 +1,0 @@
----
-entities:
-- sensor.dishwasher_power
-title: Sensor
-type: entities

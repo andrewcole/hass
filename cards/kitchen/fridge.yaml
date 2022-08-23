@@ -1,5 +1,0 @@
----
-entities:
-- sensor.fridge_power
-title: Sensor
-type: entities
