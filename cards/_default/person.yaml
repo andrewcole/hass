@@ -1,4 +1,9 @@
 ---
-entities:
-- person.andrew_cole
-type: entities
+cards:
+- entities:
+  - person.andrew_cole
+  type: entities
+columns: 1
+square: false
+title: People
+type: grid
