@@ -1,7 +1,7 @@
 ---
 cards:
 - entities:
-  - switch.bathroom_fans
+  - group.bathroom_fans
   - sensor.bathroom_fans_power
   - switch.bathroom_fan_01
   - sensor.bathroom_fan_01_power

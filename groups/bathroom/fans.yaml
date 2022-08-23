@@ -1,0 +1,5 @@
+---
+entities:
+- switch.bathroom_fan_01
+- switch.bathroom_fan_02
+name: Bathroom Fans

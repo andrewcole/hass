@@ -1,7 +1,7 @@
 ---
 cards:
 - entities:
-  - switch.ensuite_fans
+  - group.ensuite_fans
   - sensor.ensuite_fans_power
   - switch.ensuite_fan_01
   - sensor.ensuite_fan_01_power
