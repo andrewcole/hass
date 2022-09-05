@@ -3,18 +3,35 @@ cards:
 - entities:
   - entities:
     - entity: light.bedroom_downlights
-      secondary_info: "{{states('sensor.bedroom_downlights_power')}}"
+      name: Downlight 1
+      secondary_info: "{{states('sensor.bedroom_downlights_power') | float(0.0) / 2}} W"
       type: custom:secondaryinfo-entity-row
-    - entity: sensor.bedroom_downlights_power
-    - entities:
-      - entity: light.bedroom_tablelight_01
-      - entity: light.bedroom_tablelight_02
-      head:
-        entity: light.bedroom_tablelights
-      type: entities
+    - entity: light.bedroom_downlights
+      name: Downlight 2
+      secondary_info: "{{states('sensor.bedroom_downlights_power') | float(0.0) / 2}} W"
+      type: custom:secondaryinfo-entity-row
     head:
-      entity: light.bedroom_lights
+      entity: light.bedroom_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.bedroom_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
     type: custom:fold-entity-row
+  - entities:
+    - entity: light.bedroom_tablelight_01
+      name: Tablelight 1
+      secondary_info: "{{states('sensor.bedroom_tablelight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.bedroom_tablelight_02
+      name: Tablelight 2
+      secondary_info: "{{states('sensor.bedroom_tablelight_2_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.bedroom_tablelights
+      name: Tablelights
+      secondary_info: "{{states('sensor.bedroom_tablelights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  type: entities
 columns: 1
 square: false
 title: Lights
