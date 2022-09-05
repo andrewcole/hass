@@ -1,7 +1,0 @@
----
-entities:
-- light.ensuite_downlights
-- light.ensuite_nightlights
-name: Ensuite Lights
-platform: group
-unique_id: ensuite_lights
