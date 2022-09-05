@@ -26,7 +26,11 @@ lovelace:
   mode: yaml
   resources:
   - type: module
+    url: /local/card-tools.js
+  - type: module
     url: /local/fold-entity-row.js
+  - type: module
+    url: /local/secondaryinfo-entity-row.js
 recorder:
   db_url: !secret recorder_db_url
 scene:
