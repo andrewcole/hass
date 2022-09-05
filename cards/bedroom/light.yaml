@@ -3,6 +3,8 @@ cards:
 - entities:
   - entities:
     - entity: light.bedroom_downlights
+      secondary_info: "{{states('sensor.bedroom_downlights_power')}}"
+      type: custom:secondaryinfo-entity-row
     - entity: sensor.bedroom_downlights_power
     - entities:
       - entity: light.bedroom_tablelight_01
