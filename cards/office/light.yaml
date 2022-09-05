@@ -2,19 +2,19 @@
 cards:
 - entities:
   - entity: light.office_lights
-  - sensor.office_lights_power
+  - entity: sensor.office_lights_power
   - entity: light.office_downlights
-  - sensor.office_downlights_power
-  - sensor.office_power_01_power
-  - sensor.office_power_02_power
-  - sensor.office_power_03_power
-  - sensor.office_power_04_power
+  - entity: sensor.office_downlights_power
+  - entity: sensor.office_power_01_power
+  - entity: sensor.office_power_02_power
+  - entity: sensor.office_power_03_power
+  - entity: sensor.office_power_04_power
   - entity: light.office_downlight_01
   - entity: light.office_downlight_02
   - entity: light.office_downlight_03
   - entity: light.office_downlight_04
   - entity: light.office_tablelights
-  - sensor.office_tablelights_power
+  - entity: sensor.office_tablelights_power
   - entity: light.office_tablelight_01
     name: Tablelight 01
   - entity: sensor.office_tablelight_01_power
