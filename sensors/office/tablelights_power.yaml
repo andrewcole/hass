@@ -7,5 +7,5 @@ sensors:
     unit_of_measurement: W
     value_template: >-
       {{
-        (states('sensor.office_tablelight_01_power') | float) +
-        (states('sensor.office_tablelight_02_power') | float) }}
+        (states('sensor.office_tablelight_01_power') | float(0.0)) +
+        (states('sensor.office_tablelight_02_power') | float(0.0)) }}
