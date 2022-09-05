@@ -6,4 +6,4 @@ sensors:
     friendly_name: Entrance Lights Power
     unit_of_measurement: W
     value_template: >-
-      {{ (states('sensor.entrance_downlights_power') | float ) }}
+      {{ (states('sensor.entrance_downlights_power') | float(0.0) ) }}

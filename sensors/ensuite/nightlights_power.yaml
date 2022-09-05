@@ -6,4 +6,4 @@ sensors:
     friendly_name: Ensuite Nightlights Power
     unit_of_measurement: W
     value_template: >-
-      {{ (states('sensor.ensuite_nightlight_01_power') | float) }}
+      {{ (states('sensor.ensuite_nightlight_01_power') | float(0.0)) }}

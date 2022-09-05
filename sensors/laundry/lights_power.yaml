@@ -6,4 +6,5 @@ sensors:
     friendly_name: Laundry Lights Power
     unit_of_measurement: W
     value_template: >-
-      {{ (states('sensor.laundry_downlights_power') | float) + (states('sensor.laundry_nightlights_power') | float) }}
+      {{ (states('sensor.laundry_downlights_power') | float(0.0)) +
+         (states('sensor.laundry_nightlights_power') | float(0.0)) }}

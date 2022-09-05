@@ -7,4 +7,4 @@ sensors:
     unit_of_measurement: W
     value_template: >-
       {{
-        (states('sensor.backyard_downlights_power') | float) }}
+        (states('sensor.backyard_downlights_power') | float(0.0)) }}
