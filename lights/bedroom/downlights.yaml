@@ -1,9 +1,0 @@
----
-entities:
-- light.bedroom_downlight_01
-- light.bedroom_downlight_02
-- light.bedroom_downlight_03
-- light.bedroom_downlight_04
-name: Bedroom Downlights
-platform: group
-unique_id: bedroom_downlights
