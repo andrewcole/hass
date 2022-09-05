@@ -1,9 +1,0 @@
----
-platform: template
-sensors:
-  ensuite_downlights_power:
-    device_class: power
-    friendly_name: Ensuite Downlights Power
-    unit_of_measurement: W
-    value_template: >-
-      {{ (states('sensor.ensuite_downlight_01_power') | float(0.0) ) }}
