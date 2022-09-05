@@ -1,12 +1,15 @@
 ---
 cards:
 - entities:
-  - light.bedroom_lights
-  - light.bedroom_downlights
-  - sensor.bedroom_downlights_power
-  - light.bedroom_tablelights
-  - light.bedroom_tablelight_01
-  - light.bedroom_tablelight_02
+  - entities:
+    - light.bedroom_downlights
+    - sensor.bedroom_downlights_power
+    - light.bedroom_tablelights
+    - light.bedroom_tablelight_01
+    - light.bedroom_tablelight_02
+    head:
+      entity: light.bedroom_lights
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false
