@@ -1,5 +1,5 @@
 ---
-actioff:
+action:
 - service: homeassistant.turn_off
   target:
     entity_id: switch.ensuite_fan
