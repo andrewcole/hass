@@ -1,0 +1,9 @@
+---
+cards:
+- entities:
+  - sensor.office_pc_power
+  type: entities
+columns: 1
+square: false
+title: Appliances
+type: grid
