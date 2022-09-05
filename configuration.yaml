@@ -26,7 +26,7 @@ lovelace:
   mode: yaml
   resources:
   - type: module
-    url: /www/fold-entity-row.js
+    url: /local/fold-entity-row.js
 recorder:
   db_url: !secret recorder_db_url
 scene:
