@@ -4,11 +4,11 @@ cards:
   - entities:
     - entity: light.bedroom_downlights
       name: Downlight 1
-      secondary_info: "{{states('sensor.bedroom_downlights_power') | float(0.0) / 2}} W"
+      secondary_info: "{{states('sensor.bedroom_downlight_01_power')}} W"
       type: custom:secondaryinfo-entity-row
     - entity: light.bedroom_downlights
       name: Downlight 2
-      secondary_info: "{{states('sensor.bedroom_downlights_power') | float(0.0) / 2}} W"
+      secondary_info: "{{states('sensor.bedroom_downlight_02_power')}} W"
       type: custom:secondaryinfo-entity-row
     head:
       entity: light.bedroom_downlights
@@ -19,11 +19,11 @@ cards:
   - entities:
     - entity: light.bedroom_tablelight_01
       name: Tablelight 1
-      secondary_info: "{{states('sensor.bedroom_tablelight_1_power')}} W"
+      secondary_info: "{{states('sensor.bedroom_tablelight_01_power')}} W"
       type: custom:secondaryinfo-entity-row
     - entity: light.bedroom_tablelight_02
       name: Tablelight 2
-      secondary_info: "{{states('sensor.bedroom_tablelight_2_power')}} W"
+      secondary_info: "{{states('sensor.bedroom_tablelight_02_power')}} W"
       type: custom:secondaryinfo-entity-row
     head:
       entity: light.bedroom_tablelights
