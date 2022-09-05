@@ -2,11 +2,13 @@
 cards:
 - entities:
   - entities:
-    - light.bedroom_downlights
-    - sensor.bedroom_downlights_power
-    - light.bedroom_tablelights
-    - light.bedroom_tablelight_01
-    - light.bedroom_tablelight_02
+    - entity: light.bedroom_downlights
+    - entity: sensor.bedroom_downlights_power
+    - entities:
+      - entity: light.bedroom_tablelight_01
+      - entity: light.bedroom_tablelight_02
+      head:
+        entity: light.bedroom_tablelights
     head:
       entity: light.bedroom_lights
     type: custom:fold-entity-row
