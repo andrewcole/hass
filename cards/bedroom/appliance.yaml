@@ -1,8 +1,8 @@
 ---
 cards:
 - entities:
-  - sensor.sensor.electric_blanket_left_power
-  - sensor.sensor.electric_blanket_right_power
+  - sensor.electric_blanket_left_power
+  - sensor.electric_blanket_right_power
   type: entities
 columns: 1
 square: false
