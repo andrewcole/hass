@@ -1,28 +1,44 @@
 ---
 cards:
 - entities:
-  - entity: light.office_lights
-  - entity: sensor.office_lights_power
-  - entity: light.office_downlights
-  - entity: sensor.office_downlights_power
-  - entity: sensor.office_power_01_power
-  - entity: sensor.office_power_02_power
-  - entity: sensor.office_power_03_power
-  - entity: sensor.office_power_04_power
-  - entity: light.office_downlight_01
-  - entity: light.office_downlight_02
-  - entity: light.office_downlight_03
-  - entity: light.office_downlight_04
-  - entity: light.office_tablelights
-  - entity: sensor.office_tablelights_power
-  - entity: light.office_tablelight_01
-    name: Tablelight 01
-  - entity: sensor.office_tablelight_01_power
-    name: Tablelight 01 Power
-  - entity: light.office_tablelight_02
-    name: Tablelight 02
-  - entity: sensor.office_tablelight_02_power
-    name: Tablelight 02 Power
+  - entities:
+    - entity: light.office_downlight_01
+      name: Downlight 1
+      secondary_info: "{{states('sensor.office_downlight_01_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.office_downlight_02
+      name: Downlight 2
+      secondary_info: "{{states('sensor.office_downlight_02_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.office_downlight_03
+      name: Downlight 3
+      secondary_info: "{{states('sensor.office_downlight_03_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.office_downlight_04
+      name: Downlight 4
+      secondary_info: "{{states('sensor.office_downlight_04_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.office_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.office_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  - entities:
+    - entity: light.office_tablelight_01
+      name: Tablelight 1
+      secondary_info: "{{states('sensor.office_tablelight_01_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.office_tablelight_02
+      name: Tablelight 2
+      secondary_info: "{{states('sensor.office_tablelight_02_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.office_tablelights
+      name: Tablelights
+      secondary_info: "{{states('sensor.office_tablelights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false

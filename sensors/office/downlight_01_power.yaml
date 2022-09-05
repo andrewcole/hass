@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  office_downlight_01_power:
+    device_class: power
+    friendly_name: Office Downlight 01 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.office_downlights_power') | float(0.0) / 4) }}"
