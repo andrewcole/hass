@@ -6,27 +6,7 @@ action:
 alias: Ensuite Downlights
 mode: single
 trigger:
-- entity_id: binary_sensor.ensuite_switch_01
+- entity_id: binary_sensor.ensuite_switch
   from: "on"
   platform: state
   to: "off"
-- entity_id: binary_sensor.ensuite_switch_02
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.ensuite_switch_03
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.ensuite_switch_01
-  from: "off"
-  platform: state
-  to: "on"
-- entity_id: binary_sensor.ensuite_switch_02
-  from: "off"
-  platform: state
-  to: "on"
-- entity_id: binary_sensor.ensuite_switch_03
-  from: "off"
-  platform: state
-  to: "on"
