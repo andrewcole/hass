@@ -1,9 +1,0 @@
----
-platform: template
-sensors:
-  office_lights_power:
-    device_class: power
-    friendly_name: Office Lights Power
-    unit_of_measurement: W
-    value_template: >-
-      {{ (states('sensor.office_downlights_power') | float) + (states('sensor.office_tablelights_power') | float) }}
