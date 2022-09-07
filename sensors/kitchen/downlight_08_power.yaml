@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  kitchen_downlight_08_power:
+    device_class: power
+    friendly_name: Kitchen Downlight 08 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.kitchen_downlights_b_power') | float(0.0) / 4) }}"
