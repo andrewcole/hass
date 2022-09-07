@@ -1,16 +1,12 @@
 ---
 cards:
 - entities:
-  - group.bathroom_fans
-  - sensor.bathroom_fans_power
-  - switch.bathroom_fan_01
-  - sensor.bathroom_fan_01_power
-  - switch.bathroom_fan_02
-  - sensor.bathroom_fan_02_power
-  type: entities
-- entities:
-  - sensor.bathroom_humidity
-  - sensor.bathroom_temperature
+  - entity: switch.bathroom_fan
+    name: Fan
+    secondary_info: "{{states('sensor.bathroom_fan_power')}} W"
+    type: custom:secondaryinfo-entity-row
+  - entity: sensor.bathroom_humidity
+  - entity: sensor.bathroom_temperature
   type: entities
 columns: 1
 square: false

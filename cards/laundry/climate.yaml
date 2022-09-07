@@ -1,14 +1,12 @@
 ---
 cards:
 - entities:
-  - group.laundry_fans
-  - sensor.laundry_fans_power
-  - switch.laundry_fan_01
-  - sensor.laundry_fan_01_power
-  type: entities
-- entities:
-  - sensor.laundry_humidity
-  - sensor.laundry_temperature
+  - entity: switch.laundry_fan
+    name: Fan
+    secondary_info: "{{states('sensor.laundry_fan_power')}} W"
+    type: custom:secondaryinfo-entity-row
+  - entity: sensor.laundry_humidity
+  - entity: sensor.laundry_temperature
   type: entities
 columns: 1
 square: false
