@@ -1,6 +1,6 @@
 ---
 cards:
-- entity: climate.office_air_conditioner
+- entity: climate.office_hvac
   type: thermostat
 - entities:
   - sensor.office_humidity

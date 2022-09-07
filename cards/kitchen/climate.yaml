@@ -1,6 +1,6 @@
 ---
 cards:
-- entity: climate.kitchen_air_conditioner
+- entity: climate.kitchen_hvac
   type: thermostat
 - entities:
   - sensor.kitchen_humidity

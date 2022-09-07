@@ -1,6 +1,6 @@
 ---
 cards:
-- entity: climate.lounge_air_conditioner
+- entity: climate.lounge_hvac
   type: thermostat
 - entities:
   - sensor.lounge_humidity

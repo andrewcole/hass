@@ -1,6 +1,6 @@
 ---
 cards:
-- entity: climate.bedroom_air_conditioner
+- entity: climate.bedroom_hvac
   type: thermostat
 - entities:
   - sensor.bedroom_humidity
