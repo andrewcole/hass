@@ -31,25 +31,15 @@ cards:
   - entities:
     - entity: light.lounge_tablelight_1
       name: Tablelight 1
-      secondary_info: "{{states('sensor.lounge_tablelight_1_power')}} W"
-      type: custom:secondaryinfo-entity-row
     - entity: light.lounge_tablelight_2
       name: Tablelight 2
-      secondary_info: "{{states('sensor.lounge_tablelight_2_power')}} W"
-      type: custom:secondaryinfo-entity-row
     - entity: light.lounge_tablelight_3
       name: Tablelight 2
-      secondary_info: "{{states('sensor.lounge_tablelight_3_power')}} W"
-      type: custom:secondaryinfo-entity-row
     - entity: light.lounge_tablelight_4
       name: Tablelight 2
-      secondary_info: "{{states('sensor.lounge_tablelight_4_power')}} W"
-      type: custom:secondaryinfo-entity-row
     head:
       entity: light.lounge_tablelights
       name: Tablelights
-      secondary_info: "{{states('sensor.lounge_tablelights_power')}} W"
-      type: custom:secondaryinfo-entity-row
     type: custom:fold-entity-row
   type: entities
 columns: 1
