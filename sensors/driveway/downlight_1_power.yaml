@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  driveway_downlight_1_power:
+    device_class: power
+    friendly_name: Driveway Downlight 1 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.driveway_downlights_power') | float(0.0) / 1) }}"

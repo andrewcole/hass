@@ -1,8 +1,8 @@
 ---
 platform: template
 sensors:
-  office_downlight_03_power:
+  office_downlight_2_power:
     device_class: power
-    friendly_name: Office Downlight 03 Power
+    friendly_name: Office Downlight 2 Power
     unit_of_measurement: W
     value_template: "{{ (states('sensor.office_downlights_power') | float(0.0) / 4) }}"

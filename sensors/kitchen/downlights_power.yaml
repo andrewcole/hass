@@ -7,7 +7,6 @@ sensors:
     unit_of_measurement: W
     value_template: >-
       {{
-        (states('sensor.kitchen_power_01_power') | float(0.0)) +
-        (states('sensor.kitchen_power_02_power') | float(0.0)) +
-        (states('sensor.kitchen_power_03_power') | float(0.0)) +
-        (states('sensor.kitchen_power_04_power') | float(0.0)) }}
+        (states('sensor.kitchen_downlights_a_power') | float(0.0)) +
+        (states('sensor.kitchen_downlights_b_power') | float(0.0)) +
+        (states('sensor.kitchen_downlights_c_power') | float(0.0)) }}

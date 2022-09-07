@@ -1,8 +1,0 @@
----
-platform: template
-sensors:
-  ensuite_fan_01_power:
-    device_class: power
-    friendly_name: Ensuite Fan 01 Power
-    unit_of_measurement: W
-    value_template: "{{ (states('sensor.ensuite_fans_power') | float(0.0) / 1) }}"

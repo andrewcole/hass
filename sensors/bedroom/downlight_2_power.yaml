@@ -1,8 +1,8 @@
 ---
 platform: template
 sensors:
-  bedroom_downlight_01_power:
+  bedroom_downlight_2_power:
     device_class: power
-    friendly_name: Bedroom Downlight 01 Power
+    friendly_name: Bedroom Downlight 2 Power
     unit_of_measurement: W
     value_template: "{{ (states('sensor.bedroom_downlights_power') | float(0.0) / 2) }}"

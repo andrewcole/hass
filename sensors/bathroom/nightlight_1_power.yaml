@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  bathroom_nightlight_1_power:
+    device_class: power
+    friendly_name: Bathroom Nightlight 1 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.bathroom_nightlights_power') | float(0.0) / 1) }}"

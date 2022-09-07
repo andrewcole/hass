@@ -1,8 +1,8 @@
 ---
 platform: template
 sensors:
-  ensuite_nightlight_01_power:
+  ensuite_nightlight_1_power:
     device_class: power
-    friendly_name: Ensuite Nightlight 01 Power
+    friendly_name: Ensuite Nightlight 1 Power
     unit_of_measurement: W
     value_template: "{{ (states('sensor.ensuite_nightlights_power') | float(0.0) / 1) }}"

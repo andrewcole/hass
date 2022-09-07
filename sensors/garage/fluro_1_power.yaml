@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  garage_fluro_1_power:
+    device_class: power
+    friendly_name: Garage Fluro 1 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.garage_fluros_power') | float(0.0) / 2) }}"

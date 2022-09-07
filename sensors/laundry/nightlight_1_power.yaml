@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  laundry_nightlight_1_power:
+    device_class: power
+    friendly_name: Laundry Nightlight 1 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.laundry_nightlights_power') | float(0.0) / 1) }}"

@@ -1,9 +1,0 @@
----
-platform: template
-sensors:
-  entrance_lights_power:
-    device_class: power
-    friendly_name: Entrance Lights Power
-    unit_of_measurement: W
-    value_template: >-
-      {{ (states('sensor.entrance_downlights_power') | float(0.0) ) }}
