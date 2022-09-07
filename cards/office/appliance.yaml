@@ -1,7 +1,7 @@
 ---
 cards:
 - entities:
-  - sensor.office_pc_power
+  - sensor.office_rack_power
   type: entities
 columns: 1
 square: false

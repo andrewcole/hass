@@ -1,11 +1,11 @@
 ---
 cards:
 - entities:
-  - sensor.dishwasher_power
-  - sensor.dishwasher_mode
-  - sensor.fridge_power
-  - sensor.fridge_mode
-  - switch.virtual_reality_lighthouses
+  - entity: sensor.dishwasher_power
+  - entity: sensor.dishwasher_mode
+  - entity: sensor.fridge_power
+  - entity: sensor.fridge_mode
+  - entity: switch.vr_lighthouses
   type: entities
 columns: 1
 square: false
