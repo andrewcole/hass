@@ -1,18 +1,21 @@
 ---
 cards:
 - entities:
-  - light.backyard_lights
-  - sensor.backyard_lights_power
-  - light.backyard_downlights
-  - sensor.backyard_downlights_power
-  - light.backyard_downlight_01
-  - sensor.backyard_downlight_01_power
-  - light.backyard_downlight_02
-  - sensor.backyard_downlight_02_power
-  - light.backyard_downlight_03
-  - sensor.backyard_downlight_03_power
-  - light.backyard_downlight_04
-  - sensor.backyard_downlight_04_power
+  - entities:
+    - entity: light.backyard_downlight_1
+      name: Downlight 1
+      secondary_info: "{{states('sensor.backyard_downlight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.backyard_downlight_2
+      name: Downlight 2
+      secondary_info: "{{states('sensor.backyard_downlight_2_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.backyard_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.backyard_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false

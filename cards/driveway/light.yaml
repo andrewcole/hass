@@ -1,12 +1,17 @@
 ---
 cards:
 - entities:
-  - light.driveway_lights
-  - sensor.driveway_lights_power
-  - light.driveway_downlights
-  - sensor.driveway_downlights_power
-  - light.driveway_downlight_01
-  - sensor.driveway_downlight_01_power
+  - entities:
+    - entity: light.driveway_downlight_1
+      name: Downlight 1
+      secondary_info: "{{states('sensor.driveway_downlight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.driveway_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.driveway_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false

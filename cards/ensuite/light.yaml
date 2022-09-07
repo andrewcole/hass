@@ -2,9 +2,9 @@
 cards:
 - entities:
   - entities:
-    - entity: light.ensuite_downlight_01
+    - entity: light.ensuite_downlight_1
       name: Downlight 1
-      secondary_info: "{{states('sensor.ensuite_downlight_01_power')}} W"
+      secondary_info: "{{states('sensor.ensuite_downlight_1_power')}} W"
       type: custom:secondaryinfo-entity-row
     head:
       entity: light.ensuite_downlights
@@ -12,17 +12,10 @@ cards:
       secondary_info: "{{states('sensor.ensuite_downlights_power')}} W"
       type: custom:secondaryinfo-entity-row
     type: custom:fold-entity-row
-  - entities:
-    - entity: light.ensuite_nightlight_01
-      name: Nightlight 1
-      secondary_info: "{{states('sensor.ensuite_nightlight_01_power')}} W"
-      type: custom:secondaryinfo-entity-row
-    head:
-      entity: light.ensuite_nightlights
-      name: Nightlights
-      secondary_info: "{{states('sensor.ensuite_nightlights_power')}} W"
-      type: custom:secondaryinfo-entity-row
-    type: custom:fold-entity-row
+  - entity: light.ensuite_nightlights
+    name: Nightlights
+    secondary_info: "{{states('sensor.ensuite_nightlights_power')}} W"
+    type: custom:secondaryinfo-entity-row
   type: entities
 columns: 1
 square: false

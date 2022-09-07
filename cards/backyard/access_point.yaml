@@ -1,7 +1,7 @@
 ---
 cards:
 - entities:
-  - switch.backyard_access_point
+  - entity: switch.backyard_access_point
   type: entities
 columns: 1
 square: false

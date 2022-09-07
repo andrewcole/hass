@@ -1,21 +1,56 @@
 ---
 cards:
 - entities:
-  - light.lounge_lights
-  - light.lounge_downlights
-  - sensor.lounge_downlights_power
-  - sensor.lounge_power_01_power
-  - sensor.lounge_power_02_power
-  - light.lounge_downlight_01
-  - light.lounge_downlight_02
-  - light.lounge_downlight_03
-  - light.lounge_downlight_04
-  - light.lounge_downlight_05
-  - light.lounge_tablelights
-  - light.lounge_tablelight_01
-  - light.lounge_tablelight_02
-  - light.lounge_tablelight_03
-  - light.lounge_tablelight_04
+  - entities:
+    - entity: light.lounge_downlight_1
+      name: Downlight 1
+      secondary_info: "{{states('sensor.lounge_downlight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_downlight_2
+      name: Downlight 2
+      secondary_info: "{{states('sensor.lounge_downlight_2_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_downlight_3
+      name: Downlight 3
+      secondary_info: "{{states('sensor.lounge_downlight_3_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_downlight_4
+      name: Downlight 4
+      secondary_info: "{{states('sensor.lounge_downlight_4_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_downlight_5
+      name: Downlight 5
+      secondary_info: "{{states('sensor.lounge_downlight_5_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.lounge_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.lounge_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  - entities:
+    - entity: light.lounge_tablelight_1
+      name: Tablelight 1
+      secondary_info: "{{states('sensor.lounge_tablelight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_tablelight_2
+      name: Tablelight 2
+      secondary_info: "{{states('sensor.lounge_tablelight_2_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_tablelight_3
+      name: Tablelight 2
+      secondary_info: "{{states('sensor.lounge_tablelight_3_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.lounge_tablelight_4
+      name: Tablelight 2
+      secondary_info: "{{states('sensor.lounge_tablelight_4_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.lounge_tablelights
+      name: Tablelights
+      secondary_info: "{{states('sensor.lounge_tablelights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false

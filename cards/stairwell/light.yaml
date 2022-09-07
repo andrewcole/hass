@@ -1,20 +1,25 @@
 ---
 cards:
 - entities:
-  - light.stairwell_lights
-  - sensor.stairwell_lights_power
-  - light.stairwell_downlights
-  - sensor.stairwell_downlights_power
-  - light.stairwell_downlight_01
-  - sensor.stairwell_downlight_01_power
-  - light.stairwell_downlight_02
-  - sensor.stairwell_downlight_02_power
-  - light.stairwell_downlight_03
-  - sensor.stairwell_downlight_03_power
-  - light.stairwell_nightlights
-  - sensor.stairwell_nightlights_power
-  - light.stairwell_nightlight_01
-  - sensor.stairwell_nightlight_01_power
+  - entities:
+    - entity: light.stairwell_downlight_1
+      name: Downlight 1
+      secondary_info: "{{states('sensor.stairwell_downlight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.stairwell_downlight_2
+      name: Downlight 2
+      secondary_info: "{{states('sensor.stairwell_downlight_2_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.stairwell_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.stairwell_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  - entity: light.stairwell_nightlights
+    name: Nightlights
+    secondary_info: "{{states('sensor.stairwell_nightlights_power')}} W"
+    type: custom:secondaryinfo-entity-row
   type: entities
 columns: 1
 square: false

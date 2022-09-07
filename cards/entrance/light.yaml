@@ -1,12 +1,17 @@
 ---
 cards:
 - entities:
-  - light.entrance_lights
-  - sensor.entrance_lights_power
-  - light.entrance_downlights
-  - sensor.entrance_downlights_power
-  - light.entrance_downlight_01
-  - sensor.entrance_downlight_01_power
+  - entities:
+    - entity: light.entrance_downlight_1
+      name: Downlight 1
+      secondary_info: "{{states('sensor.entrance_downlight_1_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    head:
+      entity: light.entrance_downlights
+      name: Downlights
+      secondary_info: "{{states('sensor.entrance_downlights_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false
