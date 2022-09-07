@@ -2,6 +2,18 @@
 cards:
 - entities:
   - entities:
+    - entity: light.kitchen_downlights_a
+      name: Downlights A
+      secondary_info: "{{states('sensor.kitchen_downlights_a_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.kitchen_downlights_b
+      name: Downlights B
+      secondary_info: "{{states('sensor.kitchen_downlights_b_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.kitchen_downlights_c
+      name: Downlights C
+      secondary_info: "{{states('sensor.kitchen_downlights_c_power')}} W"
+      type: custom:secondaryinfo-entity-row
     - entity: light.kitchen_downlight_01
       name: Downlight 01
       secondary_info: "{{states('sensor.kitchen_downlight_01_power')}} W"
