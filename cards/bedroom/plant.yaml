@@ -1,7 +1,7 @@
 ---
 cards:
 - entities:
-  - sensor.gracie_moisture_sensor
+  - sensor.gracie_moisture
   type: entities
 columns: 1
 square: false
