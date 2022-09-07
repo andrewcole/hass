@@ -1,6 +1,7 @@
 ---
 entities:
-- light.kitchen_nightlight_01
+- light.kitchen_nightlight_1
+- light.kitchen_nightlight_2
 name: Kitchen Nightlights
 platform: group
 unique_id: kitchen_nightlights

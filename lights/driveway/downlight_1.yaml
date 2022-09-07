@@ -1,0 +1,6 @@
+---
+entities:
+- light.driveway_downlights
+name: Driveway Downlight 1
+platform: group
+unique_id: driveway_downlight_1

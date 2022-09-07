@@ -1,7 +1,0 @@
----
-entities:
-- light.kitchen_downlights
-- light.kitchen_nightlights
-name: Kitchen Lights
-platform: group
-unique_id: kitchen_lights

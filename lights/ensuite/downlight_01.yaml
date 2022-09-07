@@ -1,6 +1,0 @@
----
-entities:
-- light.ensuite_downlights
-name: Ensuite Downlight 01
-platform: group
-unique_id: ensuite_downlight_01

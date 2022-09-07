@@ -1,6 +1,0 @@
----
-entities:
-- light.entrance_downlight_01
-name: Entrance Downlights
-platform: group
-unique_id: entrance_downlights
