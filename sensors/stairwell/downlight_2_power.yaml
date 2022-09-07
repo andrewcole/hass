@@ -1,0 +1,8 @@
+---
+platform: template
+sensors:
+  stairwell_downlight_2_power:
+    device_class: power
+    friendly_name: Stairwell Downlight 2 Power
+    unit_of_measurement: W
+    value_template: "{{ (states('sensor.stairwell_downlights_a_power') | float(0.0) / 2) }}"
