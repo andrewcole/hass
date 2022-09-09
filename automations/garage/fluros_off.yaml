@@ -2,19 +2,19 @@
 action:
 - service: homeassistant.turn_off
   target:
-    entity_id: light.garage_downlights
-alias: Garage Downlights Off
+    entity_id: light.garage_fluros
+alias: Garage Fluros Off
 condition:
 - condition: and
   conditions:
   - condition: state
     entity_id:
-    - binary_sensor.garage_motion_01
+    - binary_sensor.garage_motion_1
     state: "off"
 mode: single
 trigger:
 - entity_id:
-  - binary_sensor.garage_motion_01
+  - binary_sensor.garage_motion_1
   for:
     seconds: 180
   platform: state

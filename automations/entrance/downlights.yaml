@@ -3,14 +3,10 @@ action:
 - service: light.toggle
   target:
     entity_id: light.entrance_downlights
-alias: Entrance Downlights
+alias: Switch - Entrance Downlights
 mode: single
 trigger:
-- entity_id: binary_sensor.entrance_switch_01
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.entrance_switch_01
+- entity_id: binary_sensor.entrance_switch_1
   from: "off"
   platform: state
   to: "on"

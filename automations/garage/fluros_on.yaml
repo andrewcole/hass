@@ -2,11 +2,11 @@
 action:
 - service: homeassistant.turn_on
   target:
-    entity_id: light.garage_downlights
-alias: Garage Downlights On
+    entity_id: light.garage_fluros
+alias: Garage Fluros On
 mode: single
 trigger:
 - entity_id:
-  - binary_sensor.garage_motion_01
+  - binary_sensor.garage_motion_1
   platform: state
   to: "on"

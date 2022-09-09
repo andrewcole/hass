@@ -2,14 +2,14 @@
 action:
 - service: homeassistant.turn_on
   target:
-    entity_id: light.laundry_nightlight
-alias: Ensuite Nightlight On
+    entity_id: light.bathroom_nightlights
+alias: Bathroom Nightlights On
 condition:
 - condition: or
   conditions:
   - condition: state
     entity_id:
-    - light.laundry_downlights
+    - light.bathroom_downlights
     state: "on"
   - condition: state
     entity_id:
@@ -20,7 +20,7 @@ trigger:
 - event: start
   platform: homeassistant
 - entity_id:
-  - light.laundry_downlights
+  - light.bathroom_downlights
   platform: state
   to: "on"
 - entity_id:

@@ -25,35 +25,11 @@ condition:
       state: "off"
 mode: single
 trigger:
-- entity_id: binary_sensor.office_switch_01
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.office_switch_01
+- entity_id: binary_sensor.office_switch_1
   from: "off"
   platform: state
   to: "on"
-- entity_id: binary_sensor.office_switch_02
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.office_switch_02
-  from: "off"
-  platform: state
-  to: "on"
-- entity_id: binary_sensor.office_switch_03
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.office_switch_03
-  from: "off"
-  platform: state
-  to: "on"
-- entity_id: binary_sensor.office_switch_04
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.office_switch_04
+- entity_id: binary_sensor.office_switch_2
   from: "off"
   platform: state
   to: "on"

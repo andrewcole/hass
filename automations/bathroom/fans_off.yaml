@@ -2,11 +2,11 @@
 action:
 - service: homeassistant.turn_off
   target:
-    entity_id: switch.ensuite_fan
-alias: Ensuite Fan Off
+    entity_id: switch.bathroom_fan
+alias: Bathroom Fan Off
 mode: single
 trigger:
 - entity_id:
-  - light.ensuite_downlights
+  - light.bathroom_downlights
   platform: state
   to: "off"

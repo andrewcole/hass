@@ -2,7 +2,7 @@
 action:
 - service: homeassistant.turn_off
   target:
-    entity_id: group.laundry_fans
+    entity_id: group.laundry_fan
 alias: Laundry Fans Off
 condition:
 - condition: and

@@ -2,14 +2,14 @@
 action:
 - service: homeassistant.turn_off
   target:
-    entity_id: light.kitchen_nightlight
-alias: Kitchen Nightlights Off
+    entity_id: light.bathroom_nightlights
+alias: Bathroom Nightlights Off
 condition:
 - condition: and
   conditions:
   - condition: state
     entity_id:
-    - light.kitchen_downlights
+    - light.bathroom_downlights
     state: "off"
   - condition: state
     entity_id:
@@ -20,7 +20,7 @@ trigger:
 - event: start
   platform: homeassistant
 - entity_id:
-  - light.kitchen_downlights
+  - light.bathroom_downlights
   for:
     seconds: 15
   platform: state

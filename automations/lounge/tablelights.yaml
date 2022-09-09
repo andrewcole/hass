@@ -3,7 +3,7 @@ action:
 - service: light.toggle
   target:
     entity_id: light.lounge_tablelights
-alias: Lounge Downlights
+alias: Lounge Tablelights
 condition:
 - condition: or
   conditions:
@@ -23,19 +23,11 @@ condition:
     state: "off"
 mode: single
 trigger:
-- entity_id: binary_sensor.lounge_switch_01
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.lounge_switch_01
+- entity_id: binary_sensor.lounge_switch_1
   from: "off"
   platform: state
   to: "on"
-- entity_id: binary_sensor.lounge_switch_02
-  from: "on"
-  platform: state
-  to: "off"
-- entity_id: binary_sensor.lounge_switch_02
+- entity_id: binary_sensor.lounge_switch_2
   from: "off"
   platform: state
   to: "on"

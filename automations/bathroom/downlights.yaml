@@ -2,11 +2,11 @@
 action:
 - service: light.toggle
   target:
-    entity_id: light.ensuite_downlights
-alias: Ensuite Downlights
+    entity_id: light.bathroom_downlights
+alias: Bathroom Downlights
 mode: single
 trigger:
-- entity_id: binary_sensor.ensuite_switch
+- entity_id: binary_sensor.bathroom_switch
   from: "off"
   platform: state
   to: "on"
