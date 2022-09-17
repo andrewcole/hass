@@ -1,0 +1,13 @@
+---
+cards:
+- entity: climate.burleigh
+  type: thermostat
+- entities:
+  - switch.burleigh_nanoe
+  - sensor.burleigh_inside_temperature
+  - sensor.burleigh_outside_temperature
+  type: entities
+columns: 1
+square: false
+title: Climate
+type: grid
