@@ -82,6 +82,10 @@ cards:
       name: Nightlight 1
     - entity: light.kitchen_nightlight_2
       name: Nightlight 2
+    - entity: light.kitchen_nightlight_3
+      name: Nightlight 3
+    - entity: light.kitchen_nightlight_4
+      name: Nightlight 4
     head:
       entity: light.kitchen_nightlights
       name: Nightlights
