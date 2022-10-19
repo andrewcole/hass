@@ -4,16 +4,6 @@ action:
   target:
     entity_id: switch.laundry_fan
 alias: Laundry Fan Off
-condition:
-- condition: and
-  conditions:
-  - condition: state
-    entity_id:
-    - light.laundry_downlights
-    state: "off"
-  - below: 50
-    condition: numeric_state
-    entity_id: sensor.laundry_dryer_power
 mode: single
 trigger:
 - entity_id:
@@ -22,8 +12,3 @@ trigger:
     seconds: 15
   platform: state
   to: "off"
-- below: 10
-  entity_id: sensor.laundry_dryer_power
-  for:
-    seconds: 60
-  platform: numeric_state

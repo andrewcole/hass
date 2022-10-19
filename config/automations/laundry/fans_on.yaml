@@ -10,7 +10,3 @@ trigger:
   - light.laundry_downlights
   platform: state
   to: "on"
-- above: 10
-  entity_id:
-  - sensor.laundry_dryer_power
-  platform: numeric_state
