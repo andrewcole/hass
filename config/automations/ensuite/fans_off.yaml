@@ -4,8 +4,21 @@ action:
   target:
     entity_id: switch.ensuite_fan
 alias: Ensuite Fan Off
+condition:
+- condition: and
+  conditions:
+  - condition: not
+    conditions:
+      condition: state
+      entity_id: light.ensuite_downlights
+      state: "on"
 mode: single
 trigger:
+- event: start
+  platform: homeassistant
+- entity_id: switch.ensuite_fan
+  platform: state
+  to: "on"
 - entity_id:
   - light.ensuite_downlights
   for:

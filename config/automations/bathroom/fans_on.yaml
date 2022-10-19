@@ -4,9 +4,19 @@ action:
   target:
     entity_id: switch.bathroom_fan
 alias: Bathroom Fan On
+condition:
+- condition: or
+  conditions:
+  - condition: state
+    entity_id: light.bathroom_downlights
+    state: "on"
 mode: single
 trigger:
-- entity_id:
-  - light.bathroom_downlights
+- event: start
+  platform: homeassistant
+- entity_id: switch.bathroom_fan
+  platform: state
+  to: "off"
+- entity_id: light.bathroom_downlights
   platform: state
   to: "on"
