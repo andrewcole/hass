@@ -7,21 +7,23 @@ alias: Laundry Fan Off
 condition:
 - condition: and
   conditions:
-  - condition: state
-    entity_id: light.laundry_downlights
-    state: "off"
-  - condition: or
+  - condition: not
+    conditions:
+      condition: state
+      entity_id: light.laundry_downlights
+      state: "on"
+  - condition: not
     conditions:
     - condition: state
       entity_id: sensor.dryer_mode
-      state: idle
-    - condition: state
-      entity_id: sensor.dryer_mode
-      state: unknown
+      state: active
 mode: single
 trigger:
 - event: start
   platform: homeassistant
+- entity_id: switch.laundry_fan
+  platform: state
+  to: "on"
 - entity_id: light.laundry_downlights
   for:
     seconds: 15
