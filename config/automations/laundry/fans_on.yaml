@@ -21,6 +21,8 @@ trigger:
 - event: start
   platform: homeassistant
 - entity_id: switch.laundry_fan
+  for:
+    seconds: 1
   platform: state
   to: "off"
 - entity_id: light.laundry_downlights

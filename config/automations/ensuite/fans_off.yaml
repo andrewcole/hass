@@ -17,6 +17,8 @@ trigger:
 - event: start
   platform: homeassistant
 - entity_id: switch.ensuite_fan
+  for:
+    seconds: 1
   platform: state
   to: "on"
 - entity_id:
