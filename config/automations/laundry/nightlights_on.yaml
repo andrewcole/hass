@@ -2,8 +2,8 @@
 action:
 - service: homeassistant.turn_on
   target:
-    entity_id: light.laundry_nightlight
-alias: Ensuite Nightlight On
+    entity_id: light.laundry_nightlights
+alias: Laundry Nightlights On
 condition:
 - condition: or
   conditions:

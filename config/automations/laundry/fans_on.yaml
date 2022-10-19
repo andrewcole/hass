@@ -2,8 +2,8 @@
 action:
 - service: homeassistant.turn_on
   target:
-    entity_id: group.laundry_fan
-alias: Laundry Fans On
+    entity_id: switch.laundry_fan
+alias: Laundry Fan On
 mode: single
 trigger:
 - entity_id:
@@ -12,5 +12,5 @@ trigger:
   to: "on"
 - above: 10
   entity_id:
-  - sensor.dryer_power
+  - sensor.laundry_dryer_power
   platform: numeric_state
