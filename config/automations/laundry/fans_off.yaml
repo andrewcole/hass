@@ -13,7 +13,7 @@ condition:
     state: "off"
   - condition: state
     entity_id:
-    - sensor.laundry_dryer
+    - sensor.dryer_mode
     state:
     - idle
     - unknown
@@ -28,7 +28,7 @@ trigger:
   platform: state
   to: "off"
 - entity_id:
-  - sensor.laundry_dryer
+  - sensor.dryer_mode
   platform: state
   to:
   - idle
