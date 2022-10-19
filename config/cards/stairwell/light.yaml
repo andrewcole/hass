@@ -17,21 +17,14 @@ cards:
         secondary_info: "{{states('sensor.stairwell_downlights_a_power')}} W"
         type: custom:secondaryinfo-entity-row
       type: custom:fold-entity-row
-    - entities:
-      - entity: light.stairwell_downlight_3
-        name: Downlight 3
-        secondary_info: "{{states('sensor.stairwell_downlight_3_power')}} W"
-        type: custom:secondaryinfo-entity-row
-      - entity: light.stairwell_downlight_4
-        name: Downlight 4
-        secondary_info: "{{states('sensor.stairwell_downlight_4_power')}} W"
-        type: custom:secondaryinfo-entity-row
-      head:
-        entity: light.stairwell_downlights_b
-        name: Downlights B
-        secondary_info: "{{states('sensor.stairwell_downlights_b_power')}} W"
-        type: custom:secondaryinfo-entity-row
-      type: custom:fold-entity-row
+    - entity: light.stairwell_downlight_3
+      name: Downlight 3
+      secondary_info: "{{states('sensor.stairwell_downlight_3_power')}} W"
+      type: custom:secondaryinfo-entity-row
+    - entity: light.stairwell_downlight_4
+      name: Downlight 4
+      secondary_info: "{{states('sensor.stairwell_downlight_4_power')}} W"
+      type: custom:secondaryinfo-entity-row
     head:
       entity: light.stairwell_downlights
       name: Downlights

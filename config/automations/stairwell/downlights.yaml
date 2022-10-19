@@ -14,3 +14,7 @@ trigger:
   from: "off"
   platform: state
   to: "on"
+- entity_id: binary_sensor.stairwell_switch_3
+  from: "off"
+  platform: state
+  to: "on"

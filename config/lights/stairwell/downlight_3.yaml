@@ -1,6 +1,0 @@
----
-entities:
-- light.stairwell_downlights_b
-name: Stairwell Downlight 3
-platform: group
-unique_id: stairwell_downlight_3
