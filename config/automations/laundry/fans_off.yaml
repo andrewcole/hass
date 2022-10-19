@@ -8,28 +8,32 @@ condition:
 - condition: and
   conditions:
   - condition: state
-    entity_id:
-    - light.laundry_downlights
+    entity_id: light.laundry_downlights
     state: "off"
-  - condition: state
-    entity_id:
-    - sensor.dryer_mode
-    state:
-    - idle
-    - unknown
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: sensor.dryer_mode
+      state: idle
+    - condition: state
+      entity_id: sensor.dryer_mode
+      state: unknown
 mode: single
 trigger:
 - event: start
   platform: homeassistant
-- entity_id:
-  - light.laundry_downlights
+- entity_id: light.laundry_downlights
   for:
     seconds: 15
   platform: state
   to: "off"
-- entity_id:
-  - sensor.dryer_mode
+- entity_id: sensor.dryer_mode
   platform: state
-  to:
-  - idle
-  - unknown
+  to: idle
+  for:
+    seconds: 15
+- entity_id: sensor.dryer_mode
+  platform: state
+  to: unknown
+  for:
+    seconds: 15
