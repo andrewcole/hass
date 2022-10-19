@@ -39,3 +39,13 @@ trigger:
   to: unknown
   for:
     seconds: 15
+- entity_id: sensor.washing_machine_mode
+  platform: state
+  to: idle
+  for:
+    seconds: 15
+- entity_id: sensor.washing_machine_mode
+  platform: state
+  to: unknown
+  for:
+    seconds: 15

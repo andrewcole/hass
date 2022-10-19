@@ -13,6 +13,9 @@ condition:
   - condition: state
     entity_id: sensor.dryer_mode
     state: active
+  - condition: state
+    entity_id: sensor.washing_machine_mode
+    state: active
 mode: single
 trigger:
 - event: start
@@ -24,5 +27,8 @@ trigger:
   platform: state
   to: "on"
 - entity_id: sensor.dryer_mode
+  platform: state
+  to: active
+- entity_id: sensor.washing_machine_mode
   platform: state
   to: active
