@@ -4,11 +4,32 @@ action:
   target:
     entity_id: switch.laundry_fan
 alias: Laundry Fan Off
+condition:
+- condition: and
+  conditions:
+  - condition: state
+    entity_id:
+    - light.laundry_downlights
+    state: "off"
+  - condition: state
+    entity_id:
+    - sensor.laundry_dryer
+    state:
+    - idle
+    - unknown
 mode: single
 trigger:
+- event: start
+  platform: homeassistant
 - entity_id:
   - light.laundry_downlights
   for:
     seconds: 15
   platform: state
   to: "off"
+- entity_id:
+  - sensor.laundry_dryer
+  platform: state
+  to:
+  - idle
+  - unknown
