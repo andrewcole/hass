@@ -8,5 +8,7 @@ mode: single
 trigger:
 - entity_id:
   - light.bathroom_downlights
+  for:
+    seconds: 15
   platform: state
   to: "off"
