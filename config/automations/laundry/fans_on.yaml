@@ -17,6 +17,9 @@ mode: single
 trigger:
 - event: start
   platform: homeassistant
+- entity_id: switch.laundry_fan
+  platform: state
+  to: "off"
 - entity_id: light.laundry_downlights
   platform: state
   to: "on"
